@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- TODO: Separate PixelCode to fbPiexel.js -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1759975387581214'); // Insert your pixel ID here.
+      fbq('track', 'AddToCart');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1759975387581214&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+    <div class="dimmed hidden">
+      <div class="completePay"><span class="close"></span><span class="cardImg"></span>
+        <p class="top">결제카드가<br>등록되었습니다.</p><strong></strong>
+        <p class="bottom">카드 유효성 검증을 위해 결제된 100원은<br><span>48시간</span>내로 돌려드립니다.</p>
+      </div>
+    </div>
+    <header>
+      <div class="logo"></div>
+      <a href="#" data-toggle="tooltip"  data-title="
+        <p>
+          당사는 회원의 정보 보안을 매우 중요하게 생각합니다 인터넷으
+          로 전송되는 결제 정보는 SSL(Secure Sockets Layer)을 통해 보
+          호됩니다. SSL은 이름과 결제 정보를 포함한 개인정보를 암호화하
+          여 전송 중에 제 3자가 읽을 수 없도록 합니다. 또한 암호화딘 형식
+          으로 결제 정보를 저장합니다.
+        </p>
+      " data-html="true" data-placement="bottom" rel="tooltip" class="securityBtn">
+         <span class="secImg"></span>
+          보안서버
+      </a>
+
+      <span class="securityText">개인 정보 암호화 중..</span>
+      <span class="secuirtyIcon"></span>
+    </header>
+    <main class="container hidden">
+      <input type="hidden" id="utm_source"/>
+      <input type="hidden" id="utm_medium"/>
+      <input type="hidden" id="utm_campaign"/>
+
+      <section data-vc-full-width="true" data-vc-full-width-init="true" class="row intro">
+        <div class="titleWrapper">
+          <p class="title">안심하세요. 지금 결제되지 않습니다.</p>
+          <p class="mTitle">안심하세요. 지금 결제되지 않습니다.</p>
+          <p class="desc _card">무료 사용 종료(<span id="endAt"></span>) 이후부터 <br> 해당 카드로 자동 과금이 진행됩니다.</p>
+          <p class="mDesc">무료 사용 종료(<span id="mEndAt"></span>) 이후부터 <br> 해당 카드로 자동 과금이 진행됩니다.
+          </p>
+          <div class="navigator _userNav">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+            <span class="fourth"></span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-12 cardWrapper">
+          <div class="payInfo">
+            <table class="infoTable">
+              <tbody>
+                <tr>
+                  <td class="nf _cardName">카드사</td>
+                  <td>
+                    <div id="select_box">
+                      <label for="color">카드사를 선택해 주세요</label>
+                      <select id="color" name="" title="select card" class="cardComp">
+                        <option value=""></option>
+                        <option value="1">비씨</option>
+                        <option value="2">국민</option>
+                        <option value="3">하나(외환)</option>
+                        <option value="4">삼성</option>
+                        <option value="6">신한</option>
+                        <option value="7">현대</option>
+                        <option value="8">롯데</option>
+                        <option value="11">씨티</option>
+                        <option value="12">NH채움</option>
+                        <option value="13">수협</option>
+                        <option value="14">신협</option>
+                        <option value="15">우리카드</option>
+                        <option value="21">광주</option>
+                        <option value="22">전북</option>
+                        <option value="23">제주</option>
+                        <option value="24">산은캐피탈</option>
+                        <option value="25">해외 비자</option>
+                        <option value="26">해외 마스터</option>
+                        <option value="27">해외 다이너스</option>
+                        <option value="28">해외 AMX</option>
+                        <option value="29">해외 JCB</option>
+                        <option value="31">OKCashbag</option>
+                        <option value="32">우체국</option>
+                        <option value="33">MG새마을 체크카드</option>
+                        <option value="34">중국은행 체크카드</option>
+                        <option value="35">KDB 체크카드</option>
+                        <option value="36">현대증권 체크카드</option>
+                        <option value="37">저축은행</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="nf _cardNo">카드번호</td>
+                  <td>
+                    <div class="card">
+                      <input id="first" type="text" pattern="d*"  maxlength="4" class="_info _cardNumber">
+                      <input id="second" type="password" pattern="[0-9]*"  maxlength="4" class="_info _cardNumber">
+                      <input id="third" type="password" pattern="[0-9]*"  maxlength="4" class="_info _cardNumber">
+                      <input id="fourth" type="text" pattern="d*"  maxlength="4" class="_info _cardNumber">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="nf">유효기간</td>
+                  <td>
+                    <div class="expMonth">
+                      <label for="month">월</label>
+                      <select id="month" name="" title="" class="monthSelector">
+                        <option value=""></option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                    </div>
+                    <div class="expYear">
+                      <label for="year">년</label>
+                      <select id="year" name="" title="" class="yearSelector">
+                        <option value=""></option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+                        <option value="2034">2034</option>
+                        <option value="2035">2035</option>
+                        <option value="2036">2036</option>
+                        <option value="2037">2037</option>
+                        <option value="2038">2038</option>
+                        <option value="2039">2039</option>
+                        <option value="2040">2040</option>
+                      </select>
+                    </div>
+                    <div class="security_partner">
+                        <div class="icon"></div>
+                        <p>온라인 보안 관련</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="eulaWrapper">
+                    <input id="eulaYN" type="checkbox" value="0002" class="eulaCheck">
+                    <label for="eulaYN"></label>
+                    <p class="eula">서비스 <a href="/terms.html?type=service" style="color:#767bfe;">이용 약관</a> 및 <a href="/terms.html" style="color:#767bfe;">개인정보 취급방침</a> 정책에 동의 합니다.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <div class="footer"><a href="#" class="next">완료</a></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-12 _alert">
+          <p>
+            제품을 주문하시면 첫달은 무료로 사용이 가능합니다. 첫달 무료 이용 기간 중 언제든지 제품을 반납하시면 요금이 부과되지 않습니다. 제품을 반납하시려면 스위처 앱 내에서 무료 반납 하기를 클릭해주세요. 결제 이후 한달을 채우지 않고 해지하시는 경우 남은 기간에 대한 금액은 환불해 드리지 않습니다
+            주문 완료 버튼을 누르면 무료 체험이 시작되며 무료 체험 완료 이후 반납을 하지 않을 경우 당사에서 회원님께 <span class="price">월 결제 요금(1,800원)</span>을 청구하도록 승인하고 동의하는 것으로 간주 됩니다.
+          </p>
+        </div>
+      </section>
+    </main>
+    <div id="completeModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="close"></div>
+          <div class="modal-body">
+            <div class="cardimg"></div>
+            <div class="title">
+              결제 카드가 <br> 등록되었습니다.
+            </div>
+            <div class="underline"></div>
+            <div class="addedText">
+              카드 유효성 검증을 위해 결제된 1000원은 <br> <span class="highlite">48시간</span> 내로 돌려드립니다.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="mCompleteModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="close"></div>
+          <div class="modal-body">
+            <div class="cardimg"></div>
+            <div class="title">
+              결제 카드가 <br> 등록되었습니다.
+            </div>
+            <div class="underline"></div>
+            <div class="addedText">
+              카드 유효성 검증을 위해 결제된 1000원은 <br> <span class="highlite">48시간</span> 내로 돌려드립니다.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/vendor/jquery.easing.min.js"></script>
+    <script src="../js/vendor/jquery.autotab.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/pay/card.js"></script>
+  </body>
+</html>
+

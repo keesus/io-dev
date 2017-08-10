@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>스위처</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="No-Cache">
+
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="/bower_components/jquery/dist/jquery-ui.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/purchase/main.css">
+  <link rel="stylesheet" href="/node_modules/fullpagejs/jquery.fullPage.css">
+
+  <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body class="loading">
+
+<div id="staticImg" class="hidden">
+  <div class="timer"></div>
+</div>
+
+<div class="preload">
+  <img src="/img/background/main-1.png" alt="preload">
+  <img src="/img/background/main-2.png" alt="preload">
+  <img src="/img/background/main-3.png" alt="preload">
+  <img src="/img/background/main-7.png" alt="preload">
+</div>
+
+<!-- Web Header -->
+<header class="noEventHeader">
+  <div class="logo"></div>
+  <div class="sms">
+    <a class="buyBtn navbar-btn_header navbar-right-btn" data-toggle="modal" data-target="#endBuyModal">구매하러 가기</a>
+  </div>
+</header>
+
+<!-- Mobile Header -->
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+  <div>
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand logoWp">
+        <div class="logo"></div>
+      </a>
+      <a href="#sms" ontouchstart="return true;" class="buyBtn navbar-btn_header navbar-right-btn" data-toggle="modal" data-target="#mEndBuyModal">구매하러 가기</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container webWp hidden" id="fullpage">
+  <section class="row slide intro section" id="intro">
+    <div class="col-md-12 buy">
+      <p class="row solve">스위치에<br>일상을<br>붙이세요</p>
+      <div class="row buyWrapper"></div>
+      <div class="dropdown row"><a href="#intro" class="page-scroll"><strong class="down"></strong></a></div>
+    </div>
+  </section>
+
+  <section class="row slide bleWrapper section">
+    <div data-vc-full-width="true" data-vc-full-width-init="true" class="col-md-12 bleCol">
+      <div class="bigWrp"><img src="/img/switcher-big@2x.png" alt="스위처 이미지" class="bigSwitcher"></div>
+      <p class="contents"><br>세상에서 가장 설치하기 쉬운<br>스마트조명 제품입니다</p>
+    </div>
+  </section>
+
+  <section class="row slide belcroWrapper section">
+    <div data-vc-full-width="true" data-vc-full-width-init="true" class="col-md-12 belCol">
+      <div class="textContents"><span>그냥 붙이면 끝</span>
+        <p class="contents">특수소재 벨크로를 사용해<br>1분만에 설치가 끝나요</p>
+        <div class="play" data-toggle="modal" data-target="#myModal">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row slide nightWrapper section">
+    <div data-vc-full-width="true" data-vc-full-width-init="true" class="col-md-12 nightCol"><span>당연시 여겨온 일상 속 불편함을 해소해 보세요</span>
+      <p class="contents">당신의 라이프스타일에 맞춰 예약 제어 하실 수 있습니다<br>더이상 깜깜한 자취방으로 퇴근하지마세요</p>
+    </div>
+  </section>
+
+  <section class="row bedWrapper slide section _m">
+    <div class="col-md-12 bedCol morning box">
+      <div class="contentWrapper"><span class="clock">AM 09:00</span><strong></strong><span class="morning">아침을 상쾌하게</span>
+        <p class="contents">일어날 시간을 예약해 놓으면,<br>스위처가 대신 불을 켜드려요</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="row noneSlide specWrapper section fp-auto-height">
+    <div class="col-md-12 spectitle"><span class="title">제품 스펙</span><strong></strong></div>
+    <div class="col-md-5">
+      <ul class="specInfo">
+        <li><span class="title">무게</span><span class="desc">1버튼 스위처:: 106g 2버튼 스위처:: 126g</span></li>
+        <li><span class="title">사이즈</span><span class="desc">W:7.4 H:13.3 Z:2.5 (cm)</span></li>
+        <li><span class="title">연결성</span><span class="desc">블루투스 4.0</span></li>
+        <li><span class="title">호환성</span><span class="desc">아이폰 / 안드로이드</span></li>
+        <li><span class="title">배터리</span><span class="desc">3시간 완충 / 2달 사용 가능</span></li>
+        <li><span class="title">충전</span><span class="desc">안드로이드 5pin 충전잭</span></li>
+        <li><span class="title">통신반경</span><span class="desc">30M</span></li>
+      </ul>
+    </div>
+    <div class="col-md-7 specImg"><img src="/img/line-model@2x.png" alt="제품 스펙 이미지 입니다."></div>
+  </section>
+
+  <section class="row sizeWrapper noneSlide section fp-auto-height">
+    <div class="sizeContainer">
+      <div class="col-md-5 sizeCol"><span class="title">호환되는 스위처 규격</span>
+        <p class="first"><img src="/img/ic-confirm@2x.png" alt="confirm"> 모든 1버튼/2버튼 스위처에 사용 가능</p>
+        <p class="second"><img src="/img/ic-confirm@2x.png" alt="confirm"> 3버튼 스위처는 출시 예정</p>
+        <p class="third"><img src="/img/ic-sorry@2x.png" alt="sorry"> 구형 스위처(버튼이 작은)는 사용 불가</p><a
+          href="https://medium.com/@switcher/%EC%9A%B0%EB%A6%AC-%EC%A7%91-%EC%8A%A4%EC%9C%84%EC%B9%98%EC%97%90-%EC%8A%A4%EC%9C%84%EC%B2%98-%EA%B0%80-%EB%A7%9E%EB%82%98-d0d7d74f9951#.mmkvrxahb"
+          class="detail">자세히 보기</a>
+      </div>
+      <div class="col-md-2 oneWrp"><img src="/img/one-button@2x.png" alt="원버튼 스위처 이미지">
+        <p><span></span> 1버튼 스위처</p>
+      </div>
+      <div class="col-md-2 twoWrp"><img src="/img/two-button@2x.png" alt="투버튼 스위처 이미지">
+        <p><span></span> 2버튼 스위처</p>
+      </div>
+      <div class="col-md-2 smallWrp"><img src="/img/small-button@2x.png" alt="안되는 스위처 이미지">
+        <p><span></span> 사용 불가 스위처</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="noneSlide row faqWrapper section fp-auto-height"><span class="title">FAQ</span>
+    <ul class="nav nav-tabs faqTab">
+      <li class="active product _tab"><a data-toggle="tab" href="#menu1" class="productFaq">제품 관련</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="menu1" class="tab-pane fade in active">
+        <div class="q-1">
+          <p data-toggle="collapse" data-target="#switcherFirst" class="question">1개의 스마트폰으로 다수의 스위처 제어 가능한가요?
+            <img src="/img/unfold@2x.png" alt="unfold" class="unfold">
+            <img src="/img/fold@2x.png" alt="fold" class="fold hidden">
+          </p>
+          <div id="switcherFirst" class="collapse answer">
+            네 가능합니다. 1개의 스마트폰으로 다수의 스위처 제어 가능함은 물론 다수의 스마트폰으로
+            1개의 스위처 제어 가능합니다. 앞으론 매일 밤 불 꺼달라고 싸우지 마세요.
+          </div>
+        </div>
+        <div class="q-2">
+          <p data-toggle="collapse" data-target="#switcherSecond" class="question">스위치 버튼이 2개 중 1개의 버튼만 사용하는데
+            1구 스위처를 신청해야 하나요? 2구 스위처를 사용해야 하나요?<img src="/img/unfold@2x.png" alt="unfold" class="unfold">
+            <img src="/img/fold@2x.png" alt="fold" class="fold hidden">
+          </p>
+          <div id="switcherSecond" class="collapse answer">
+            1구 스위처 설치 시 스위처 뒷면 기어와 사용하는 버튼의 위치를 맞추면 사용 가능합니다.
+            하지만 1구 제품이 설치 되지 않을 수 있으니 구 스위처를 선택해주세요.
+          </div>
+        </div>
+        <div class="q-3">
+          <p data-toggle="collapse" data-target="#switcherThird" class="question">스위치 커버 위에 밸크로를 붙이면 흔적이 남지
+            않나요?
+            <img src="/img/unfold@2x.png" alt="unfold" class="unfold">
+            <img src="/img/fold@2x.png" alt="fold" class="fold hidden">
+          </p>
+          <div id="switcherThird" class="collapse answer">
+            네 흔적이 남지 않습니다. 밸크로에 사용되는 접착제는 3M 제품으로 제거 시 아무런 흔적이
+            남지 않습니다.
+          </div>
+        </div>
+        <div class="q-4">
+          <p data-toggle="collapse" data-target="#switcherFourth" class="question">배터리 충전시간 및 지속시간은 얼마나
+            되나요?
+            <img src="/img/unfold@2x.png" alt="unfold" class="unfold">
+            <img src="/img/fold@2x.png" alt="fold" class="fold hidden">
+          </p>
+          <div id="switcherFourth" class="collapse answer">
+            3시간 충전으로 약 50일간 사용 가능하십니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row footer noneSlide section fp-auto-height" style="border-top:1px solid #eaeaea"><span
+    class="ioLogo"></span>
+    <p class="companyInfo">
+      대표이사 : 임남규 ㅣ 개인정보 취급 책임자 : 임남규 ㅣ 사업자 등록번호: 257-81-00115<br>통신판매업 신고번호: 제 2016-서울성동-00133 호<br> 서울시 성동구 사근동
+      왕십리로 222 한양대학교 융합교육관 907호 아이오(147-747)<br> 고객센터: 02-6212-9272 ㅣ Email: help@switcher.co.kr<br><a
+      href='/terms.html'>개인정보 취급방침</a>
+      | <a href='/terms.html?type=service'>서비스 이용약관</a>
+    </p>
+    <p class="copyright">Copyright 2016 I/O inc. All rights Reserved.</p>
+    <p class="sns"><img src="/img/facebook@2x.png" alt="" class="facebook"><img src="/img/kakao@2x.png" alt=""
+                                                                                class="chat"><img
+      src="/img/insta@2x.png" alt="" class="insta"></p>
+  </section>
+</main>
+
+<!-- mobile web -->
+<div class="mContainer container hidden">
+  <section data-vc-full-width="true" data-vc-full-width-init="true" class="row slide intro">
+    <img src="/img/mBackground/main-1.png" alt="메인1이미지 입니다.">
+    <div class="col-xs-12 buy">
+      <p class="row solve">스위치에<br>일상을<br>붙이세요</p>
+      <div class="row buyWrapper"></div>
+      <div class="dropdown row"><a href="#mIntro" class="page-scroll"><strong class="down"></strong></a></div>
+    </div>
+  </section>
+
+  <section id="mIntro" class="row bleWrapper">
+    <div data-vc-full-width="true" data-vc-full-width-init="true" class="col-xs-12 bleCol">
+      <span>스위처</span>
+      <p class="contents"><br>세상에서 가장 설치하기 쉬운<br>스마트조명 제품입니다</p>
+    </div>
+  </section>
+
+  <section class="row belcroWrapper">
+    <div data-vc-full-width="true" data-vc-full-width-init="true" class="col-md-12 belCol">
+      <span>그냥 붙이면 끝</span>
+      <p class="contents">특수소재 벨크로를 사용해<br>1분만에 설치가 끝나요</p>
+      <p class="mPlayWrp">
+        <a href="#" class="mPlayBtn" data-toggle="modal" data-target="#mobileModal"></a>
+      </p>
+    </div>
+  </section>
+
+  <section class="row nightWrapper">
+    <div data-vc-full-width="true" data-vc-full-width-init="true" class="col-md-12 nightCol">
+      <span>앱으로 조명을 제어해 보세요</span>
+      <p class="contents">30m 떨어진 곳에서도 연결 가능합니다</p>
+    </div>
+  </section>
+
+  <section class="row reservationWrapper">
+    <div class="row top">
+      <img src="/img/mobile/shine@2x.png">
+      <p class="title">예약 기능으로<br>삶의 질을 높여보세요</p>
+      <p class="description">집을 비워도 휴대폰이 없어도<br>스위처는 설정한 시간에 동작합니다</p>
+    </div>
+    <div class="row bottom">
+      <img src="/img/mobile/switcher-schedule@2x.png">
+    </div>
+  </section>
+
+  <section data-vc-full-width="true" data-vc-full-width-init="true" class="row slide intro"><img
+    src="/img/mBackground/purchase-image.png" alt="메인1이미지 입니다.">
+    <div class="col-xs-12 buy">
+      <p class="row purchaseTop">판매 가격<p>
+      <p class="row purchaseUnderline"></p>
+      <p class="row purchaseMid">
+        <!--<span style="text-decoration:line-through"></span>-->
+      </p>
+      <p class="row purchaseBottom">60,000원</p>
+      <div class="row buyWrapper" style="margin-top: 20px;">
+        <a href="#sms" ontouchstart="return true;" class="smsBtn" data-toggle="modal" data-target="#mEndBuyModal">지금 구매하기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="row specWrapper">
+    <div class="col-xs-12 spectitle"><span class="title">제품 스펙</span><strong></strong></div>
+    <div class="col-xs-12 specImg"><img src="/img/line-model@2x.png" alt="제품 스펙 이미지 입니다."></div>
+    <div class="col-xs-12">
+      <ul class="specInfo">
+        <li><span class="title">무게</span><span class="desc">1버튼 스위처:: 106g 2버튼 스위처:: 126g</span></li>
+        <li><span class="title">사이즈</span><span class="desc">W:7.4 H:13.3 Z:2.5 (cm)</span></li>
+        <li><span class="title">연결성</span><span class="desc">블루투스 4.0</span></li>
+        <li><span class="title">호환성</span><span class="desc">아이폰 / 안드로이드</span></li>
+        <li><span class="title">배터리</span><span class="desc">3시간 완충 / 2달 사용 가능</span></li>
+        <li><span class="title">충전</span><span class="desc">마이크로 5pin 충전잭</span></li>
+        <li><span class="title">통신반경</span><span class="desc">30M</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="row sizeWrapper">
+    <div class="sizeContents">
+      <p class="title">호환되는 스위처 규격</p>
+      <div class="col-xs-4 oneWrp"><img src="/img/one-button@2x.png" alt="원버튼 스위처 이미지">
+        <p><span></span></p>
+      </div>
+      <div class="col-xs-4 twoWrp"><img src="/img/two-button@2x.png" alt="투버튼 스위처 이미지">
+        <p><span></span></p>
+      </div>
+      <div class="col-xs-4 smallWrp"><img src="/img/small-button@2x.png" alt="안되는 스위처 이미지">
+        <p><span></span></p>
+      </div>
+      <div class="col-xs-12 sizeCol">
+        <p class="first"><span><img src="/img/ic-confirm.png" alt="check 이미지"> 모든 1버튼/2버튼 스위처에 사용 가능</span></p>
+        <p class="second"><span><img src="/img/ic-confirm.png" alt="check 이미지"> 3버튼 스위처는 출시 예정</span></p>
+        <p class="third"><span><img src="/img/ic-sorry.png" alt="check 이미지"> 구형 스위처(버튼이 작은)는 사용 불가</span></p><a
+        href="https://medium.com/@switcher/%EC%9A%B0%EB%A6%AC-%EC%A7%91-%EC%8A%A4%EC%9C%84%EC%B9%98%EC%97%90-%EC%8A%A4%EC%9C%84%EC%B2%98-%EA%B0%80-%EB%A7%9E%EB%82%98-d0d7d74f9951#.mmkvrxahb"
+        class="detail">자세히 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="insta" class="row instaWrapper">
+    <div class="row header"></div>
+    <div data-vc-full-width="true" data-vc-full-width-init="true" class="col-md-12 contents">
+      <p class="row title">7,000명이 넘는 사람들이 그동안<br> 무심코 넘겨온 일상 속 불편함을 해결하였습니다.<strong></strong></p>
+      <p class="row forFreeTitle">부담없이 시작해보세요.</p>
+      <a class="buyBtn" ontouchstart="return true;" data-toggle="modal" data-target="#mEndBuyModal">지금 구매하기</a>
+    </div>
+  </section>
+
+  <section id="mFaq" class="row faqWrapper"><span class="title">FAQ</span>
+    <ul class="nav nav-tabs faqTab">
+      <!--<li class="active delivery _tab"><a data-toggle="tab" href="#mHome" class="delivFaq">무료 배송 및 반납</a></li>-->
+      <li class="active product _tab"><a data-toggle="tab" href="#mMenu1" class="productFaq">제품 관련</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="mMenu1" class="tab-pane fade in active">
+        <div class="q-1">
+          <p data-toggle="collapse" data-target="#mSwitcherFirst" class="question">1개의 스마트폰으로 다수의 스위처 제어
+            가능한가요?
+            <img src="/img/unfold@2x.png" alt="unfold" class="unfold">
+            <img src="/img/fold@2x.png" alt="fold" class="fold hidden">
+          </p>
+          <div id="mSwitcherFirst" class="collapse answer">
+            네 가능합니다. 1개의 스마트폰으로 다수의 스위처 제어 가능함은 물론 다수의 스마트폰으로
+            1개의 스위처 제어 가능합니다. 앞으론 매일 밤 불 꺼달라고 싸우지 마세요.
+          </div>
+        </div>
+        <div class="q-2">
+          <p data-toggle="collapse" data-target="#mSwitcherSecond" class="question">스위치 버튼이 2개 중 1개의 버튼만 사용하는데
+            1구 스위처를 신청해야 하나요? 2구 스위처를 사용해야 하나요?
+            <img src="/img/unfold@2x.png" alt="unfold" class="unfold">
+            <img src="/img/fold@2x.png" alt="fold" class="fold hidden">
+          </p>
+          <div id="mSwitcherSecond" class="collapse answer">
+            1구 스위처 설치 시 스위처 뒷면 기어와 사용하는 버튼의 위치를 맞추면 사용 가능합니다.
+            하지만 1구 제품이 설치 되지 않을 수 있으니 구 스위처를 선택해주세요.
+          </div>
+        </div>
+        <div class="q-3">
+          <p data-toggle="collapse" data-target="#mSwitcherThird" class="question">스위치 커버 위에 밸크로를 붙이면 흔적이 남지
+            않나요?
+            <img src="/img/unfold@2x.png" alt="unfold" class="unfold">
+            <img src="/img/fold@2x.png" alt="fold" class="fold hidden">
+          </p>
+          <div id="mSwitcherThird" class="collapse answer">
+            네 흔적이 남지 않습니다. 밸크로에 사용되는 접착제는 3M 제품으로 제거 시 아무런 흔적이
+            남지 않습니다.
+          </div>
+        </div>
+        <div class="q-4">
+          <p data-toggle="collapse" data-target="#mSwitcherFourth" class="question">배터리 충전시간 및 지속시간은 얼마나
+            되나요?
+            <img src="/img/unfold@2x.png" alt="unfold" class="unfold">
+            <img src="/img/fold@2x.png" alt="fold" class="fold hidden">
+          </p>
+          <div id="mSwitcherFourth" class="collapse answer">3시간 충전으로 약 50일간 사용 가능하십니다.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row footer" style="border-top:1px solid #eaeaea"><span class="ioLogo"></span>
+    <p class="companyInfo">대표이사 : 임남규 ㅣ 개인정보 취급 책임자 : 임남규 ㅣ 사업자 등록번호: 257-81-00115<br>통신판매업 신고번호: 제 2016-서울성동-00133
+      호<br> 서울시 성동구 사근동 왕십리로 222 한양대학교 융합교육관 907호 아이오(147-747)<br> 고객센터: 02-6212-9272 ㅣ Email: help@switcher.co.kr<br><a
+        href='/terms.html'>개인정보 취급방침</a>
+      | <a href='/terms.html?type=service'>서비스 이용약관</a><br>
+    </p>
+    <p class="copyright">Copyright 2016 I/O inc. All rights Reserved.</p>
+    <p class="sns"><img src="/img/facebook@2x.png" alt="" class="facebook"><img src="/img/kakao@2x.png" alt=""
+                                                                                class="chat"><img
+      src="/img/insta@2x.png" alt="" class="insta"/></p>
+  </section>
+</div>
+
+<div id="endBuyModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="modal-title">
+          죄송합니다. 이번 주 준비한 제품이 품절 됐습니다.<br/>
+          제품이 다시 준비되면 알림 문자를 보내드릴게요.
+        </p>
+        <p class="info">
+          판매 재개일은 <br><span class="date" id="nextEvent"></span>입니다. <br>
+        </p>
+        <div class="underline"></div>
+        <div class="input">
+          <input type="text" pattern="d*" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+                 maxlength="11" placeholder="핸드폰번호를 입력해 주세요('-' 제외)" class="phoneNumber">
+          <a href="#" class="submit btn btn-default">알림 예약하기</a>
+        </div>
+        <div class="footer">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="mEndBuyModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <strong class="close"></strong>
+        <p class="modal-title">
+          죄송합니다. 이번 주 준비한 제품이 품절 됐습니다.<br/>
+          제품이 다시 준비되면 알림 문자를 보내드릴게요.</p>
+        <p class="info">
+          판매 재개일은 <br><span class="date" id="mNextEvent"></span>입니다. <br>
+        </p>
+        <div class="underline"></div>
+        <div class="input">
+          <input type="text" pattern="d*" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57"
+                 maxlength="11" placeholder="핸드폰번호를 입력해 주세요('-' 제외)" class="mPhoneNumber">
+          <a href="#" class="mSubmit btn btn-default">알림 예약하기</a>
+        </div>
+        <div class="footer">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="/bower_components/jquery/dist/jquery-ui.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/js/vendor/jquery.easing.min.js"></script>
+<script src="/js/vendor/imagesloaded.js"></script>
+<script src="/node_modules/fullpagejs/jquery.fullPage.js"></script>
+<script src="/js/vendor/skrollr.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../js/vendor/skrollr.ie.js"></script>
+<![endif]-->
+
+<script src="/js/vendor/parallax.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/config.js"></script>
+<script src="/js/purchase/main.js"></script>
+
+</body>
+</html>

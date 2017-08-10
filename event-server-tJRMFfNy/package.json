@@ -1,0 +1,31 @@
+{
+  "name": "event",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bluebird": "3.5.0",
+    "body-parser": "~1.13.2",
+    "cls-bluebird": "2.0.1",
+    "cookie-parser": "~1.3.5",
+    "cors": "~2.8.4",
+    "debug": "~2.2.0",
+    "ejs": "^2.5.6",
+    "excel-export": "^0.5.1",
+    "express": "~4.13.1",
+    "fullPage": "~",
+    "is-bluebird": "1.0.2",
+    "jade": "~1.11.0",
+    "line-reader": "~0.4.0",
+    "moment": "^2.18.1",
+    "mongojs": "^2.4.0",
+    "morgan": "~1.6.1",
+    "mysql2": "^1.4.0",
+    "retry-as-promised": "^2.3.0",
+    "sequelize": "^4.4.2",
+    "serve-favicon": "~2.3.0",
+    "winston": "^2.2.0"
+  }
+}
