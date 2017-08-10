@@ -5,6 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <meta name="description" content="">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Cache-Control" content="No-Cache">
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
@@ -28,31 +29,58 @@
     <input type="hidden" id="utm_medium"/>
     <input type="hidden" id="utm_campaign"/>
 
-    <section data-vc-full-width="true" data-vc-full-width-init="true" class="row intro">
-        <div class="titleWrapper">
-            <p class="title">우리집에 딱 맞는 스위처를 골라보세요.</p>
-
-
-            <p class="desc">
-                3버튼 스위처는 열심히 개발중입니다.
-                <br>
-                조금만 기다려주세요.
-
-            </p>
-
-            <input type="radio" id="b1" name="radio_btn_device_type" value="b1"/>
-            <label for="b1"><span></span>1버튼 스위처</label> </br>
-            <input type="radio" id="b2" name="radio_btn_device_type" value="b2"/>
-            <label for="b2"><span></span>2버튼 스위처</label> </br>
-            <input type="radio" id="b3" name="radio_btn_device_type" value="b3"/>
-            <label for="b3"><span></span>3버튼 스위처</label> </br>
-
-                <input type="button" class = "select_device_type" value="선택"></input>
+        <div>
+            <p class="title_question">우리집 스위치 버튼이 몇개지?</p>
+            <p class="title_description">스위치 버튼 개수에 맞는 정확한 스위처를 고르세요.</p>
 
         </div>
 
 
+    <div class = "btn_list">
+            <img src="../img/test/1-btn@2x.png" class="_btn">
+
+            <label class="btn_1" for="b1"><span></span>버튼 1개</label><input type="radio" id="b1" name="radio_btn_device_type" value="b1"/>
+
+        </div>
+
+
+        <div class = "btn_list">
+            <img src="../img/test/1-btn@2x.png" class="_btn">
+
+            <label class="btn_1" for="b2"><span></span>버튼 2개</label><input type="radio"  id="b2" name="radio_btn_device_type" value="b2"/>
+        </div>
+
+        <div class = "btn_list">
+            <img src="../img/test/1-btn@2x.png" class="_btn">
+
+            <label class="btn_1" for="b3"><span></span>버튼 3개</label><input type="radio"  id="b3" name="radio_btn_device_type" value="b3"/>
+        </div>
+
+            </br></br></br></br></br>
+                <input type="button" class = "btn_select" value="선택"></input>
+
+
+
+
+
+        <!-- Use a button to open the snackbar
+        <button onclick="myFunction()">Show Snackbar</button>
+        -->
+
+
+
+        <!-- The actual snackbar -->
+        <div id="snackbar_b1">1개 버튼 스위처를 선택하셨습니다.</div>
+        <div id="snackbar_b2">2개 버튼 스위처를 선택하셨습니다.</div>
+
+
+
+
+
+
 <!-- MODALs -->
+
+
 
 
         <div id="type1CheckModal" class="typeCheckModal modal fade" role="dialog">

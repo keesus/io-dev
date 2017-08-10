@@ -232,3 +232,43 @@ $('.select_device_type').on('click', function(e) {
 });
 
 
+
+//여기 아래에서 부터 snackbar 구현 해야함
+//현재상태 : 한번은 나오지만 사용자가 여러번 누름에 따라 유기적으로 동작하지 않음.
+
+$('#b1').change(function(){
+    if($('#b1').is(":checked")){
+
+      $('#snackbar_b1').toggleClass('show');
+
+    }else{
+        $('#snackbar_b1').addClass('hidden');
+    }
+});
+
+
+
+$("#b2").change(function(){
+    if($("#b2").is(":checked")){
+        $('#snackbar_b2').toggleClass('show');
+
+    }else{
+
+        $('#snackbar_b2').addClass('hidden');
+
+    }
+});
+
+
+function myFunction() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar")
+
+    // Add the "show" class to DIV
+
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1500);
+}
+
