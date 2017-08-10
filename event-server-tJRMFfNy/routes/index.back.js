@@ -14,6 +14,7 @@ var prefix = "/event";
 router.get(prefix+'/checkUser', function(req, res, next) {
   var eventId;
   var max;
+
   var userCnt;
   model.event.selectEvent({"status":1}, function(l) {
 
