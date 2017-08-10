@@ -539,11 +539,29 @@ main .solve {
     color: #3d4953;
 }
 
+
 main .buyWrapper .buyBtn {
     display: block;
     background-color: #767bfe;
     margin: 20px auto 0 auto;
     width: 170px;
+    border-radius: 100px;
+    border: solid 1px #bdc7cf;
+    font-family: AppleSDGothicNeo-Medium, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    padding: 13px 12px 13px 12px;
+}
+
+
+
+main .testBtn {
+    display: block;
+    background-color: #767bfe;
+    margin: 20px auto 0 auto;
+    width: 120px;
+    height: 38px;
     border-radius: 100px;
     border: solid 1px #bdc7cf;
     font-family: AppleSDGothicNeo-Medium, sans-serif;

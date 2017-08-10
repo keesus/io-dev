@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/plan.css">
+    <link rel="stylesheet" href="../css/test_device.css">
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+</head>
+<body>
+<header>
+    <div class="logo"></div>
+</header>
+<main class="container hidden">
+    <input type="hidden" id="utm_source"/>
+    <input type="hidden" id="utm_medium"/>
+    <input type="hidden" id="utm_campaign"/>
+
+    <section data-vc-full-width="true" data-vc-full-width-init="true" class="row intro">
+        <div class="titleWrapper">
+            <p class="title">우리집에 딱 맞는 스위처를 골라보세요.</p>
+
+
+            <p class="desc">
+                3버튼 스위처는 열심히 개발중입니다.
+                <br>
+                조금만 기다려주세요.
+
+            </p>
+
+            <input type="radio" id="b1" name="radio_btn_device_type" value="b1"/>
+            <label for="b1"><span></span>1버튼 스위처</label> </br>
+            <input type="radio" id="b2" name="radio_btn_device_type" value="b2"/>
+            <label for="b2"><span></span>2버튼 스위처</label> </br>
+            <input type="radio" id="b3" name="radio_btn_device_type" value="b3"/>
+            <label for="b3"><span></span>3버튼 스위처</label> </br>
+
+                <input type="button" class = "select_device_type" value="선택"></input>
+
+        </div>
+
+
+<!-- MODALs -->
+
+
+        <div id="type1CheckModal" class="typeCheckModal modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <p class="modal-title">집버튼이 3개이시군요</p>
+                        <p class="modal-title">스위처팀이 지금 열심히 개발중입니다.</p>
+                        <p class="modal-title">조금만 기다려주세요.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="../js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/vendor/jquery.easing.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/pay/plan.js"></script>
+        <script src="../js/pay/test_device.js"> </script>
+    <script src="../js/channel.js"></script>
+
+
+</main>
+</body>
+</html>

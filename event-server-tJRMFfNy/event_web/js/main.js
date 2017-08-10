@@ -245,6 +245,7 @@ var equalToMax = function () {
     alert("신청이 마감되었습니다. 다음에 신청해주세요");
 };
 
+
 $(".buyFree").on("click", function () {
 
     if (eventData.max*1 > eventData.userCount) {
@@ -253,6 +254,9 @@ $(".buyFree").on("click", function () {
         equalToMax();
     }
 });
+
+
+
 $(".buyBtn").on("click",  function () {
 
     if (eventData.max*1 > eventData.userCount) {
@@ -322,11 +326,15 @@ $(".mSubmit").on('click', function(e) {
 });
 
 
+
 for (var word in mobileKeyWords){
+
     if (navigator.userAgent.match(mobileKeyWords[word]) != null){
         isMobile = true;
     }
 }
+
+
 
 if (!isMobile) {
 
@@ -447,4 +455,12 @@ $('.mPlayBtn').on('click', function(e) {
 
 window.onhashchange = function (e) {
 };
+
+
+$(".testBtn").on('click', function(e) {
+    var path = "/pay"+"/test_device.html";
+
+    location.href = path;
+
+});
 
