@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory-->
+    <!--<link rel="stylesheet" href="../css/normalize.css">-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/device.css">
+
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+    </header>
+    <main class="container-fluid hidden">
+      <input type="hidden" id="utm_source"/>
+      <input type="hidden" id="utm_medium"/>
+      <input type="hidden" id="utm_campaign"/>
+
+      <section data-vc-full-width="true" data-vc-full-width-init="true" class="row intro">
+        <div class="titleWrapper _dWrapper">
+          <p class="_device title">제품을 선택해주세요</p>
+          <p class="mTitle">제품을 선택해주세요</p>
+          <p class="desc _device">현재 스위처는 1인당 1개만 선택 가능합니다. </p>
+          <div class="navigator"><span class="first"></span><span class="second"></span><span class="third"></span><span class="fourth"></span></div>
+        </div>
+         <div class="col-xs-12 col-md-12 oneWrapper">
+            <div class="btnSelectorWrp">
+              <div class="oneBtn col-xs-12 col-md-6 _selector" style="margin-right:14px;" >
+                <ul>
+                  <li class="imgbox"><strong></strong></li>
+                  <li>
+                    <p><span>1버튼 스위처</span><br> <strong>1개 버튼</strong>이 있는 스위치에 사용</p>
+                  </li>
+                  <li>
+                    <input id="group1" type="radio" name="group1" value="0002" class="singleBtn">
+                    <label for="group1"></label>
+                  </li>
+                </ul>
+              </div>
+              <div class="twoBtn col-xs-12 col-md-6 _selector">
+                <ul>
+                  <li class="imgbox"><strong></strong></li>
+                  <li>
+                    <p><span>2버튼 스위처</span><br> <strong>2개 버튼</strong>이 있는 스위치에 사용</p>
+                  </li>
+                  <li>
+                    <input id="group2" type="radio" name="group1" value="0003" class="singleBtn">
+                    <label for="group2"></label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <!-- Modal for checking switcher type -->
+    <div id="type1CheckModal" class="typeCheckModal modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="../img/ic-list-switcher-one.png" class="modal-logo">
+          <div class="modal-body">
+            <p class="modal-title">1버튼 스위처를 선택하였습니다.</p>
+            <div class="underline"></div>
+            <div class="input">
+              <a href="#" id="type1CheckPrev"><p class="prev">잘못선택했어요!</p></a>
+              <a href="#" id="type1CheckNext"><p class="next" onclick="trackSecondButtonEvent()">우리집에 딱 맞아요!</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="type2CheckModal" class="typeCheckModal modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="../img/ic-list-switcher-two.png" class="modal-logo">
+          <div class="modal-body">
+            <p class="modal-title">2버튼 스위처를 선택하였습니다.</p>
+            <div class="underline"></div>
+            <div class="input">
+              <a href="#" id="type2CheckPrev"><p class="prev">잘못선택했어요!</p></a>
+              <a href="#" id="type2CheckNext"><p class="next" onclick="trackSecondButtonEvent()">우리집에 딱 맞아요!</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mType1CheckModal" class="mTypeCheckModal modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="../img/ic-list-switcher-one.png" class="modal-logo">
+          <div class="modal-body">
+            <p class="modal-title">1버튼 스위처를 선택하였습니다.</p>
+            <div class="underline"></div>
+            <div class="input">
+              <a href="#" id="mType1CheckPrev"><p class="prev">잘못선택했어요!</p></a>
+              <a href="#" id="mType1CheckNext"><p class="next" onclick="trackSecondButtonEvent()">우리집에 딱 맞아요!</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mType2CheckModal" class="mTypeCheckModal modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="../img/ic-list-switcher-two.png" class="modal-logo">
+          <div class="modal-body">
+            <p class="modal-title">2버튼 스위처를 선택하였습니다.</p>
+            <div class="underline"></div>
+            <div class="input">
+              <a href="#" id="mType2CheckPrev"><p class="prev">잘못선택했어요!</p></a>
+              <a href="#" id="mType2CheckNext"><p class="next" onclick="trackSecondButtonEvent()">우리집에 딱 맞아요!</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+    
+    <script src="../js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/vendor/jquery.easing.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/pay/device.js"></script>
+
+    <!-- Google Analytics.-->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);
+        r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-67524903-3','auto');
+      ga('send', 'pageview');
+
+      function trackSecondButtonEvent() {
+        ga('send', 'event', {
+          eventCategory: 'conversion',
+          eventAction: 'select_switcher_model_2',
+          eventLabel: "우리 집에 딱 맞아요! 버튼 클릭 이벤트"
+        });
+      }
+    </script>
+  </body>
+</html>
