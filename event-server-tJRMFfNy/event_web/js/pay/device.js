@@ -116,6 +116,7 @@ var equalToMax = function() {
 
 $('#group1 + label').on('click', function (e) {
     if (eventData.max*1 > eventData.userCount) {
+
         moveToDeviceSelector('1');
     } else {
         equalToMax();
@@ -127,6 +128,8 @@ $('#group2 + label').on('click', function (e) {
 });
 
 $('.oneBtn').on('click', function(e) {
+
+
   if(eventData.maxByType['1'] * 1 > eventData.requestCount['1']) {
     var width = $(window).width();
     if(width >= DESKTOP_MIN_WIDTH){

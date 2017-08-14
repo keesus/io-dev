@@ -904,12 +904,7 @@ router.get(prefix + '/purchases/page/result', function (req, res, next) {
 });
 
 
-router.get('/test',function(req,res){
 
-  res.send('DONE');
-
-
-});
 
 
 module.exports = router;

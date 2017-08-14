@@ -94,6 +94,8 @@ $(function() {
     });
 });
 
+
+
 var adjustWindow = function () {
 
     var winH = $window.height();
@@ -117,9 +119,8 @@ $(document).ready(function () {
         dataType: 'application/json',
         headers : {'Content-Type':'application/json'},
         complete : function (data) {
+
             var isMAX = JSON.parse(data.responseText).data.max==JSON.parse(data.responseText).data.userCnt;
-
-
 
             if (data.status === 200) {
                 if (JSON.parse(data.responseText).error === "no event") {
@@ -459,8 +460,10 @@ window.onhashchange = function (e) {
 
 $(".testBtn").on('click', function(e) {
     var path = "/pay"+"/test_device.html";
-
     location.href = path;
-
 });
+
+
+
+
 
