@@ -327,6 +327,7 @@ main .payInfo .eulaCheck {
 }
 main .intro ._selector ul li:nth-child(3) label {
     /*float: right;*/
+
     margin-right: 20px;
 }
 main .intro ._selector ul li:nth-child(3) #group1 + label {
@@ -340,6 +341,42 @@ main .intro ._selector ul li:nth-child(3) #group1 + label {
     background-repeat: no-repeat;
     background-size:100% 100%;
 }
+
+
+
+
+main .intro .sel_oneBtn ul {
+    list-style-type: none;
+    margin:0;
+    padding: 12.15px 0;
+    overflow: hidden;
+    cursor:Pointer;
+}
+
+
+
+main .intro .sel_oneBtn ul li:nth-child(1){
+    float:left;
+    padding:4.334% 1.67% 4% 4.67%;
+    width: 17.335%;
+}
+main .intro .sel_oneBtn ul li:nth-child(2){
+
+
+    padding-left:71px;
+    padding-top:24px;
+    padding-bottom: 24px;
+
+
+}
+
+
+
+
+
+
+
+
 
 main .payInfo .eulaCheck + label {
     background-color:#f0f0f0;
@@ -420,40 +457,66 @@ main .intro ._selector ul li:nth-child(1) strong::after{
 
 main .intro .titleWrapper {
     background-color: #ffffff;
-    box-shadow: 0 0 2px 0 #dadada;
+    /*box-shadow: 0 0 2px 0 #dadada;*/
     margin: 0 0 39px 0;
     /*max-width:1024px;*/
     width:100%;
 }
+
 main .intro .titleWrapper._dWrapper {
     background-color: #ffffff;
-    box-shadow: 0 0 2px 0 #dadada;
+    /*box-shadow: 0 0 2px 0 #dadada;*/
     margin: 0;
     /*max-width:1024px;*/
     width:100%;
+
 }
+
+
+
+
 main .intro .titleWrapper .title {
     width:1000px;
     padding-top:32px;
     margin : 61px auto 10px auto;
     text-align:center;
-    font-family: AppleSDGothicNeo-Regular, sans-serif;
+    font-family: AppleSDG
+    othicNeo-Regular, sans-serif;
     font-size: 34px;
     line-height: 1.2;
     letter-spacing: -0.2px;
     color: #3d4953;
 }
+
 main .intro .titleWrapper ._device.title {
-   width:268px;
+    width:268px;
     padding-top:32px;
     margin : 61px auto 10px auto;
-    text-align:center;
+    text-align:left;
     font-family: AppleSDGothicNeo-Regular, sans-serif;
     font-size: 24px;
     line-height: 1.2;
     letter-spacing: -0.2px;
+
     color: #3d4953;
 }
+
+
+
+main .intro .titleWrapper ._device.test_title {
+    width: 306px;
+    height: 60px;
+    font-family: AppleSDGothicNeo;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.43;
+    text-align: left;
+    color: #3d4953;
+
+}
+
+
+
 
 
 main .intro .titleWrapper .mTitle {
@@ -516,6 +579,63 @@ main .intro .titleWrapper .navigator .fourth::after {
     display:block;
     padding-top:100%;
 }
+
+
+main .intro .btnWrapper{
+
+    width: 360px;
+    height: 341px;
+    background-color: #f8f8ff;
+
+}
+
+
+
+main .intro .btnWrapper .sel_oneBtn .text_btn{
+    width: 75px;
+    height: 19px;
+    font-family: AppleSDGothicNeo;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    color: #4a4a4a;
+
+}
+
+main .intro .btnWrapper .sel_oneBtn .img_oneBtn{
+
+    background:url('../img/test/1.png') no-repeat;
+
+    width: 48px;
+    height: 46px;
+    object-fit: contain;
+
+}
+
+
+main .intro .btnWrapper .sel_oneBtn .img_twoBtn{
+
+    background:url('../img/test/2.png') no-repeat;
+
+    width: 48px;
+    height: 46px;
+    object-fit: contain;
+
+}
+
+
+main .intro .btnWrapper .sel_oneBtn .img_threeBtn{
+
+    background:url('../img/test/3.png') no-repeat;
+
+    width: 48px;
+    height: 46px;
+    object-fit: contain;
+
+}
+
+
+
 
 main .intro .planInfo .pricePlan {
 
@@ -1220,7 +1340,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
     
     main .intro .titleWrapper {
         background-color: #ffffff;
-        box-shadow: 0 0 2px 0 #dadada;
+        /*box-shadow: 0 0 2px 0 #dadada;*/
         margin: 0 0 15px 0;
         /*max-width:1024px;*/
         width:100%;
@@ -1962,6 +2082,25 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
    main .intro .titleWrapper .desc._card {
         display:none;
     }
+
+
+
+
+
+    main .intro .titleWrapper .desc._device {
+        width: 306px;
+        height: 15px;
+        font-family: AppleSDGothicNeo;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: left;
+        color: #868fa3;
+    }
+
+
+
+
+
 
     .cardWrapper {
         padding:0;

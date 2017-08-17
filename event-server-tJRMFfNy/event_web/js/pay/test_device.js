@@ -129,20 +129,10 @@ $('#group2 + label').on('click', function (e) {
 });
 
 $('.oneBtn').on('click', function(e) {
-    if(eventData.maxByType['1'] * 1 > eventData.requestCount['1']) {
-        var width = $(window).width();
-        if(width >= DESKTOP_MIN_WIDTH){
-            $(function () {
-                $('#type1CheckModal').modal('toggle');
-            });
-        } else {
-            $(function () {
-                $('#mType1CheckModal').modal('toggle');
-            });
-        }
-    } else {
-        equalToMax();
-    }
+
+
+
+
 });
 
 $('.twoBtn').on('click', function(e) {
@@ -220,10 +210,6 @@ $('.select_device_type').on('click', function(e) {
     else{
 
         moveToPlanSelector();
-
-
-
-
 
     }
 
