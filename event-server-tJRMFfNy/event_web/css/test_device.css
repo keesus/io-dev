@@ -174,3 +174,16 @@
     visibility:visible;
 
 }
+
+
+main .intro .title ._device {
+    /*margin-top:58px;*/
+    padding-top:22px;
+    text-align:center;
+    font-family: AppleSDGothicNeo-Regular, sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.6px;
+    color: #3d4953;
+    display:block;
+}
+

@@ -97,7 +97,7 @@ div.tooltip-inner {
     font-family: AppleSDGothicNeo-Regular, sans-serif;
     font-size: 12px;
     color: #9e9e9e;
-   
+
     display:block;
     float:right;
     margin-top:10px;
@@ -148,7 +148,7 @@ main .freeIntro .cover {
     background-color: rgb(0, 0, 0);
      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); /* IE 7 and olders */
-       opacity: .5; 
+       opacity: .5;
 }
 main .freeIntro .cover strong {
     width:102px;
@@ -208,7 +208,7 @@ main .intro .cover .topContents {
     margin:70px auto 0 auto;
     /*width:377px;*/
     height:166px;
-    
+
 }
 
 main .intro .cover .topContents strong {
@@ -345,7 +345,9 @@ main .intro ._selector ul li:nth-child(3) #group1 + label {
 
 
 
-main .intro .sel_oneBtn ul {
+main .intro .sel_one
+
+Btn ul {
     list-style-type: none;
     margin:0;
     padding: 12.15px 0;
@@ -475,6 +477,9 @@ main .intro .titleWrapper._dWrapper {
 
 
 
+
+
+
 main .intro .titleWrapper .title {
     width:1000px;
     padding-top:32px;
@@ -583,7 +588,7 @@ main .intro .titleWrapper .navigator .fourth::after {
 
 main .intro .btnWrapper{
 
-    width: 360px;
+    width: 100%;
     height: 341px;
     background-color: #f8f8ff;
 
@@ -695,7 +700,7 @@ main .intro .planInfo .pricePlan li .planBox .top .title .underline {
     background-color:#fff;
     opacity:0.4;
     margin : 1px auto 0 auto;
-        
+
 }
 
 main .intro .planInfo .pricePlan li .planBox .top .price {
@@ -816,8 +821,8 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
 }
 
 @media (min-width: 992px) {
-    
-    
+
+
 
     main .intro .mBackground {
         display:none;
@@ -1009,11 +1014,11 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
     main .info .infoTable ._addressHeader {
         padding-left:10px;
     }
-    
+
     main .info .footer {
-        margin-top:30px;    
+        margin-top:30px;
     }
-    
+
     main .info .footer .next ,
     main .payInfo .footer .next,
     main .completeInfo .next
@@ -1240,7 +1245,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         color: #aaaaaa;
         text-align: center;
     }
-    
+
     .footer .sns img {
         width:24px;
         /*margin:0 0 0 19px;*/
@@ -1284,7 +1289,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         color: #88949c;
         text-align:center;
         margin-top:22px;
-        
+
     }
 
     ._alert {
@@ -1306,7 +1311,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
 
 
 @media (max-width: 991px) {
-    
+
     header {
         width:100%;
         height:37px;
@@ -1317,7 +1322,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         /*top:0;*/
         z-index:1;
     }
-    
+
     .security_partner {
         width:70px;
         height:40px;
@@ -1331,13 +1336,13 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         background-size:100% 100%;
         /*margin:0 auto;*/
     }
-    
+
     .security_partner p {
         font-family: AppleSDGothicNeo-Bold, sans-serif;
         font-size: 8px;
         color: #3d4953;
     }
-    
+
     main .intro .titleWrapper {
         background-color: #ffffff;
         /*box-shadow: 0 0 2px 0 #dadada;*/
@@ -1446,7 +1451,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         color: #3d4953;
         text-align:center;
     }
-    
+
     .mDesc {
         text-align:center;
         font-family: AppleSDGothicNeo-Regular;
@@ -1454,7 +1459,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         letter-spacing: -0.3px;
         color: #3d4953;
     }
-    
+
     main .intro .oneWrapper,
     main .intro .twoWrapper{
         overflow:hidden;
@@ -1666,12 +1671,12 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         padding:0 0 10.5% 0;
         text-align:center;
     }
-    
+
     main .intro .mPricePlan li .planBox .middle {
 
         border-bottom:1px solid #e5e5e5;
     }
-    
+
     main .completeInfo .infoTable tr .contents span {
         color:#767bfe;
     }
@@ -1720,14 +1725,14 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         text-align:center;
         padding:7px 31px 7px 31px;
     }
-    
+
     main .intro .mPricePlan li .planBox .top .title .underline {
         display:block;
         width : 46px;
         height: 1px;
         background-color:#fff;
         opacity:0.4;
-        margin : 1px auto 0 auto;        
+        margin : 1px auto 0 auto;
     }
     main .intro .titleWrapper .title {
       display:none;
@@ -1746,7 +1751,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
     main .secondWp {
         padding:0;
     }
-    
+
     main .secondWp {
         margin-top:20px;
         margin-bottom:33px;
@@ -1815,7 +1820,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         -moz-appearance: none;
         appearance: none;
         box-shadow: none;
-        
+
 
     }
     main .info .infoTable .authBox .control {
@@ -1909,11 +1914,11 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
     main .info .infoTable ._addressHeader {
         padding-left:10px;
     }
-    
+
     main .info .footer {
         margin:20px 0 10px 0;
     }
-    
+
     main .info .footer .next ,
     main .payInfo .footer .next,
     main .completeInfo .next
@@ -1982,7 +1987,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         opacity: 0;
         filter: alpha(opacity=0); /* IE 8 */
     }
-    
+
     .nf._cardNo {
         padding-bottom:24px;
     }
@@ -2029,7 +2034,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         filter: alpha(opacity=0); /* IE 8 */
 
     }
-    
+
     ._userAddress {
         word-break:break-all;
     }
@@ -2070,7 +2075,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         margin-bottom:30px;
         padding:3px 0 0 33px;
     }
-    
+
     main .intro .titleWrapper .desc {
         /*display:none;*/
         font-family: AppleSDGothicNeo-Regular, sans-serif;
@@ -2078,7 +2083,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         letter-spacing: -0.3px;
         color: #3d4953;
     }
-   
+
    main .intro .titleWrapper .desc._card {
         display:none;
     }
@@ -2209,8 +2214,8 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         margin-bottom:47px;
         margin-left:10px;
     }
-    
- 
+
+
     .orderAlert {
         font-size: 11px;
         line-height: 1.5;
@@ -2219,12 +2224,12 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         text-align:center;
         margin:22px 0 42px 0;
     }
-    
+
     div.tooltip-inner {
         min-width: 340px;
         margin-right:157px;
     }
-    
+
     .tooltip.fade.bottom.in {
         left:0px !important;
         margin:0 17px;
@@ -2292,9 +2297,9 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         margin:60px auto 0 auto;
         /*width:377px;*/
         height:166px;
-        
+
     }
-    
+
     main .intro .oneWrapper ._selector,
     main .intro .twoWrapper ._selector {
         /*margin:0 auto;*/
@@ -2302,11 +2307,11 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         margin: 0 15px 8px 15px;
         width:47.4%;
     }
-    
+
     main .intro ._selector ul li:nth-child(3) {
         margin : 29px 0 0 10px;
     }
-    
+
      main .intro ._selector ul li:nth-child(2) {
         width:69.5%;
         /*padding:3.335% 0 0 3.335%;*/
@@ -2315,7 +2320,7 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         font-size: 13px;
         color: #767bfe;
     }
-    
+
      main .intro .mPricePlan li:nth-child(1),
      main .intro .mPricePlan li:nth-child(3) {
         float:left;
@@ -2335,11 +2340,11 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
         border:1px solid #e5e5e5;
         border-radius:5px;
      }
-     
+
      main .intro .device {
         height:256px;
     }
-    
+
     div#select_box {
         position: relative;
         margin:15px 0 30px 5px;
@@ -2349,34 +2354,81 @@ main .intro .planInfo .pricePlan li .planBox .top .choice:hover {
 
         border: solid 1px #e5e5e5;
     }
-    
+
     main .info .infoTable tr .nf,
     main .payInfo .infoTable tr .nf,
     main .completeInfo .infoTable tr .nf
     {
         width:71px;
     }
-    
+
      main .info .infoTable #phoneNumber {
         width:61%;
     }
-    
+
     ._cardNumber {
         width: 22%;
     }
-    
+
     div.tooltip-inner {
         min-width: 285px;
         margin-right:101px;
     }
-    
+
     .tooltip.fade.bottom.in {
         left:0px !important;
         margin:0 17px;
     }
-    
+
     main .info .infoTable #addr1 {
         width:138px;
     }
 }
 
+
+main .intro .title ._device {
+    /*margin-top:58px;*/
+    padding-top:22px;
+    text-align:center;
+    font-family: AppleSDGothicNeo-Regular, sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.6px;
+    color: #3d4953;
+    display:block;
+}
+
+
+
+
+main .intro .title .desc {
+    width: 306px;
+    height: 15px;
+    font-family: AppleSDGothicNeo;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    color: #868fa3;
+}
+
+
+main .SelectBtn .oneBtn ul li:nth-child(1) strong {
+    display:block;
+    width:73%;
+    height:auto;
+    margin:0;
+    background:url('../img/ic-one-switcher@2x.png') no-repeat;
+    background-size:100% 100%;
+}
+
+li {
+
+    overflow: hidden;
+
+}
+
+main .intro .SelectBtn{
+    overflow:hidden;
+    /*margin:4.226% 0 7.345% 0;*/
+    margin:13px 0 8px 0;
+    padding:0;
+}

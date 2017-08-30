@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" href="../apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory-->
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css?ver=1">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/plan.css">
     <link rel="stylesheet" href="../css/device.css">
     <link rel="stylesheet" href="../css/test_device.css">
@@ -24,88 +24,61 @@
 <body>
 <header>
 </header>
-<main class="container hidden">
-    <input type="hidden" id="utm_source"/>
-    <input type="hidden" id="utm_medium"/>
-    <input type="hidden" id="utm_campaign"/>
+<main class="container-fluid hidden">
 
 
-    <section data-vc-full-width="true" data-vc-full-width-init="true" class="row intro">
+        <div class="row intro">
+            <div class="col-sm-12 title">
+                <p class="_device">제품을 선택해주세요</p>
+
+                <p class="desc">현재 스위처는 1인당 1개만 선택 가능합니다. </p>
+                <div class="navigator"><span class="first"></span><span class="second"></span><span class="third"></span><span class="fourth"></span></div>
 
 
-        <div class="titleWrapper _dWrapper">
-            <p class="_device test_title">우리집<br>스위치 버튼이 몇개지?</p>
-            <p class="desc _device">스위치 버튼 개수에 맞는 정확한 스위처를 고르세요. </p>
+            </div>
+        </div>
+
+
+
+
+        <div class="row SelectBtn">
+            <div class="col-sm-6 oneBtn">
+
+                <ul>
+                    <li class="imgbox"><strong></strong></li>
+                    <li>
+                        <p><span>1버튼 스위처</span><br><strong>1개 버튼</strong>이 있는 스위치에 사용</p>
+                    </li>
+                    <li>
+                        <input id="group1" type="radio" name="group1" value="0002" class="singleBtn">
+                        <label for="group1"></label>
+                    </li>
+                </ul>
+
+
+
+            </div>
+            <div class="col-sm-6">
+
+                <ul>
+                    <li class="imgbox"><strong></strong></li>
+                    <li>
+                        <p><span>2버튼 스위처</span><br> <strong>2개 버튼</strong>이 있는 스위치에 사용</p>
+                    </li>
+                    <li>
+                        <input id="group2" type="radio" name="group1" value="0003" class="singleBtn">
+                        <label for="group2"></label>
+                    </li>
+                </ul>
+
+
+            </div>
         </div>
 
 
-        <div class="btnWrapper">
-
-            <div class="sel_oneBtn">
-                <ul>
-                    <li><div class="img_oneBtn"><strong></strong></div></li>
-
-                    <li><span class="text_btn">버튼 1개</span></li>
-                </ul>
-
-            </div>
-
-            <div class="sel_oneBtn">
-                <ul>
-                    <li><div class="img_twoBtn"><strong></strong></div></li>
-
-                    <li><span class="text_btn">버튼 2개</span></li>
-                </ul>
-
-            </div>
-
-
-            <div class="sel_oneBtn">
-                <ul>
-                    <li><div class="img_threeBtn"><strong></strong></div></li>
-
-                    <li><span class="text_btn">버튼 3개</span></li>
-                </ul>
-
-            </div>
-
-        </div>
 
 
 
-
-    </section>
-
-
-        <!-- Use a button to open the snackbar
-        <button onclick="myFunction()">Show Snackbar</button>
-        -->
-
-
-        <!-- The actual snackbar -->
-        <div id="snackbar_b1">1개 버튼 스위처를 선택하셨습니다.</div>
-        <div id="snackbar_b2">2개 버튼 스위처를 선택하셨습니다.</div>
-
-
-<!-- MODALs -->
-ㄴ
-
-
-
-        <div id="type1CheckModal" class="typeCheckModal modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <div class="modal-body">
-
-                        <p class="modal-title">집버튼이 3개이시군요</p>
-                        <p class="modal-title">스위처팀이 지금 열심히 개발중입니다.</p>
-                        <p class="modal-title">조금만 기다려주세요.</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
     <script src="../js/vendor/jquery-1.12.4.min.js"></script>

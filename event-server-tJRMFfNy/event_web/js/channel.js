@@ -5,6 +5,7 @@ window.channelPluginSettings = {
   var node = document.createElement('div');
   node.id = 'ch-plugin';
   document.body.appendChild(node);
+
   var async_load = function() {
     var s = document.createElement('script');
     s.type = 'text/javascript';
@@ -20,3 +21,5 @@ window.channelPluginSettings = {
     window.addEventListener('load', async_load, false);
   }
 })();
+
+
