@@ -1,141 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 
+li {
+    list-style-type: none;
+    float: left;
+    margin:0;
+    padding: 0;
 
-
-
-
-#snackbar_b1{
-    visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 250px; /* Set a default minimum width */
-    margin-left: -125px; /* Divide value of min-width by 2 */
-    background-color: #333; /* Black background color */
-    color: #fff; /* White text color */
-    text-align: center; /* Centered text */
-    border-radius: 2px; /* Rounded borders */
-    padding: 16px; /* Padding */
-    position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
-    left: 50%; /* Center the snackbar */
-    bottom: 30px; /* 30px from the bottom */
 }
 
 
-#snackbar_b2{
-    visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 250px; /* Set a default minimum width */
-    margin-left: -125px; /* Divide value of min-width by 2 */
-    background-color: #333; /* Black background color */
-    color: #fff; /* White text color */
-    text-align: center; /* Centered text */
-    border-radius: 2px; /* Rounded borders */
-    padding: 16px; /* Padding */
-    position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
-    left: 50%; /* Center the snackbar */
-    bottom: 30px; /* 30px from the bottom */
+p {
+    margin:0px;
+
+
+
+}
+.head{
+
+    margin-bottom:25px;
+
+
+
+
+
 }
 
-/* Show the snackbar when clicking on a button (class added with JavaScript) */
-#snackbar_b1.show {
-    visibility: visible; /* Show the snackbar */
-
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-    However, delay the fade out process for 2.5 seconds */
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-#snackbar_b2.show {
-    visibility: visible; /* Show the snackbar */
-
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-    However, delay the fade out process for 2.5 seconds */
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-
-
-#snackbar_b1.hidden {
-    visibility: hidden; /* Show the snackbar */
-
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-    However, delay the fade out process for 2.5 seconds */
-    -webkit-animation:  fadeout 0.5s 2.5s;
-    animation: fadeout 0.5s 2.5s;
-}
-
-
-#snackbar_b1.hidden {
-    visibility: hidden; /* Show the snackbar */
-
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-    However, delay the fade out process for 2.5 seconds */
-    -webkit-animation:  fadeout 0.5s 2.5s;
-    animation:  fadeout 0.5s 2.5s;
-}
-
-
-/* Animations to fade the snackbar in and out */
-@-webkit-keyframes fadein {
-    from {bottom: 0px; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@keyframes fadein {
-    from {bottom: 0px; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
-
-
-
-
-
-.title_question{
-    width: 185px;
+.normalHeader {
+    display: block;
+    /*width: 1024px;*/
     height: 60px;
-    font-family: AppleSDGothicNeo;
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 1.43;
-    text-align: left;
-    color: #3d4953;
+    margin: 23px 0 0 -512px;
+    overflow: hidden;
+    /*position: absolute;*/
+    left: 50%;
+    z-index: 1;
 }
 
-.title_description{
-    width: 309px;
+
+
+.normalHeader .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    float: right;
+}
+
+
+
+.normalHeader .menu li {
+    width: 61px;
+    height: 11px;
+    float:left;
+
+
+
+    font-family: AppleSDGothicNeo;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    color: #767bfe;
+
+}
+
+
+
+
+.contentsTitle {
+    width: 306px;
     height: 15px;
     font-family: AppleSDGothicNeo;
     font-size: 12px;
     font-weight: 500;
     text-align: left;
     color: #868fa3;
+
+
 }
 
 
-.plan_switch_select_1 {
-    width: 360px;
-    height: 640px;
-    background-color: #ffffff;
-}
 
-
-.btn_list {
+.mainTitle {
     width: 306px;
-    height: 48px;
+    height: 60px;
+    font-family: AppleSDGothicNeo;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.43;
+    text-align: left;
+    color: #3d4953;
+    margin-bottom: 11px;
+
 }
 
 
-.btn_1{
+.contentsTitle {
+    width: 306px;
+    height: 15px;
+    font-family: AppleSDGothicNeo;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    color: #868fa3;
+
+
+}
+
+.Selection{
+    /*width: 360px;*/
+    height: 341px;
+    background-color: #f8f8ff;
+    padding-top: 12px;
+    margin-top: 49px;
+
+
+
+}
+
+.Selection .btnSelection{
+    width: 360px;
+    height: 68px;
+    margin:0px;
+    padding: 0;
+
+
+}
+
+.Selection .btnSelection .oneBtnImage{
+    width: 48px;
+    height: 46px;
+    object-fit: contain;
+    background: url('../img/test/1.png');
+    margin:0px;
+
+
+
+
+}
+
+.Selection .btnSelection .twoBtnImage{
+    width: 48px;
+    height: 46px;
+    object-fit: contain;
+    background: url('../img/test/2.png');
+    margin:0px;
+
+
+
+
+}
+.Selection .btnSelection .threeBtnImage{
+    width: 48px;
+    height: 46px;
+    object-fit: contain;
+    background: url('../img/test/3.png');
+    margin:0px;
+
+
+
+
+}
+.Selection .btnSelection .btnText{
+
     width: 75px;
     height: 19px;
     font-family: AppleSDGothicNeo;
@@ -143,47 +173,244 @@
     font-weight: bold;
     text-align: left;
     color: #4a4a4a;
+
+
+
+
 }
 
-._btn{
-    width: 49px;
-    height: 48px;
-    object-fit: contain;
+.Selection .btnSelection ul{
+
+    margin-left:16px;
+    margin-top:11px;
+    padding: 0;
+    float:left;
+
+}
+
+.Selection .btnSelection ul li:nth-child(2) {
+
+    margin-left:7px;
+    margin-top:12px;
+
+
+
 }
 
 
-.btn_select {
+.Selection .btnSelection ul li:nth-child(3) {
+
+
+
+}
+
+
+
+.Selection .btnSelection ul li:nth-child(3) #btn1, #btn2,#btn3 {
+    display: none;
+
+
+
+}
+
+
+.Selection .btnSelection ul li:nth-child(3) #btn1 + label {
+    height: 30px;
+    width: 30px;
+    display:inline-block;
+    padding: 0 0 0 0;
+    margin-top:0px;
+    margin-left:200px;
+    background:url('../img/test/deactive.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+}
+
+.Selection .btnSelection ul li:nth-child(3) #btn2 + label {
+    height: 30px;
+    width: 30px;
+    display:inline-block;
+    padding: 0 0 0 0;
+    margin-top:0px;
+    margin-left:200px;
+    background:url('../img/test/deactive.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+}
+
+.Selection .btnSelection ul li:nth-child(3) #btn3 + label {
+    height: 30px;
+    width: 30px;
+    display:inline-block;
+    padding: 0 0 0 0;
+    margin-top:0px;
+    margin-left:200px;
+    background:url('../img/test/deactive.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+}
+
+
+.Selection .btnSelection ul li:nth-child(3) #btn1:checked + label
+{
+    display:inline-block;
+
+    background-image:url('../img/check@2x.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 30px;
+    width: 30px;
+    display:inline-block;
+    margin-top:0px;
+    margin-left:200px;
+    padding: 0;
+
+}
+
+.Selection .btnSelection ul li:nth-child(3) #btn2:checked + label
+{
+    display:inline-block;
+
+    background-image:url('../img/check@2x.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 30px;
+    width: 30px;
+    display:inline-block;
+    margin-top:0px;
+    margin-left:200px;
+    padding: 0;
+
+}
+
+
+.Selection .btnSelection ul li:nth-child(3) #btn3:checked + label
+{
+    display:inline-block;
+
+    background-image:url('../img/check@2x.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 30px;
+    width: 30px;
+    display:inline-block;
+    margin-top:0px;
+    margin-left:200px;
+    padding: 0;
+
+}
+
+
+
+
+
+
+
+
+.choiceBox .chooseBox{
+
     width: 360px;
     height: 43px;
-    background-color: #767bfe;
-    background-color: var(--periwinkle);
-}
-
-.Oval{
-
-    visibility: visible;
-    width: 18px;
-    height: 18px;
-    background-color: #767bfe;
-    background-color: var(--periwinkle);
-}
+    background-color: rgba(118, 123, 254, 0.85);
 
 
-.Oval.show{
-
-    visibility:visible;
 
 }
+.choiceBox .chooseText{
+    width: 120px;
+    height: 19px;
+    font-family: AppleSDGothicNeo;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+
+    margin-left: 121px;
+    margin-top: 12px;
 
 
-main .intro .title ._device {
-    /*margin-top:58px;*/
-    padding-top:22px;
-    text-align:center;
-    font-family: AppleSDGothicNeo-Regular, sans-serif;
-    font-size: 18px;
-    letter-spacing: -0.6px;
-    color: #3d4953;
-    display:block;
+
 }
+
+.snackbarText {
+
+    width: 200px;
+    height: 15px;
+    font-family: AppleSDGothicNeo;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    margin-top:15px;
+    margin-bottom: 16px;
+    margin-left:42px;
+    color: #767bfe;
+
+}
+
+
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar_1, #snackbar_2, #snackbar_3 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    width: 324px; /* Set a default minimum width */
+    height: 46px;
+
+    border-radius: 2px;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.14);
+
+
+    background-color: #f8f8ff; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+
+    padding: 0px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    bottom: 50px; /* 30px from the bottom */
+
+
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar_1.show, #snackbar_2.show, #snackbar_3.show {
+    visibility: visible; /* Show the snackbar */
+
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 50px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 50px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 50px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 50px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
 

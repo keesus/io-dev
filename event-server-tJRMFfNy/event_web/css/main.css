@@ -60,7 +60,7 @@ a:hover {
 
 header {
     display: block;
-    width: 1024px;
+    width: 720px;
     height: 60px;
     margin: 23px 0 0 -512px;
     overflow: hidden;
@@ -1079,7 +1079,7 @@ main .priceWrapper .contents .pricePlan li {
 }
 
 main .priceWrapper .contents .pricePlan li:nth-child(1) {
-    margin-left: 10%;
+    margin-left: 10%;x
 }
 
 main .priceWrapper .contents .pricePlan li:nth-child(4) {
