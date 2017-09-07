@@ -96,6 +96,8 @@ $(function() {
 
 
 
+
+
 var adjustWindow = function () {
 
     var winH = $window.height();
@@ -269,8 +271,6 @@ $(".buyBtn").on("click",  function () {
 
 $(".submit").on('click', function(e) {
     
-    
-    
     if ($('.phoneNumber').val().length > 0) {
 
         $.ajax({
@@ -325,6 +325,8 @@ $(".mSubmit").on('click', function(e) {
         alert("폰번호를 입력해 주세요");
     }
 });
+
+
 
 
 

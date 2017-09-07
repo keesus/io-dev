@@ -9,28 +9,30 @@
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Cache-Control" content="No-Cache">
+
+
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.css">
     <link rel="apple-touch-icon" href="../apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory-->
 
-    <link rel="stylesheet" href="../css/test_device.css?ver=1">
 
     <link rel="stylesheet" href="../css/normalize.css?ver=1">
-    <!--link rel="stylesheet" href="../css/style.css">-->
-    <link rel="stylesheet" href="../css/plan.css?ver=1">
-    <link rel="stylesheet" href="../css/device.css?ver=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/test_device.css?ver=1">
 
-    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+
 
 
 
 
 </head>
-<body>
 
-<div class="container-fluid">
+<main class="container-fluid">
+    <section data-vc-full-width="true" data-vc-full-width-init="true" class="row intro">
     <div class="row head">
         <div class="col-sm-12 col-xs-12 col-md-12">
             <div class="normalHeader">
@@ -48,7 +50,7 @@
 
 
     <div class="row title">
-        <div class="col-sm-12 col-sm-offset-5">
+        <div class="col-xs-12 col-md-offset-5 col-md-12">
             <div class ="mainTitle">우리집<br>스위치 버튼이 몇개지? </div>
             <div class ="contentsTitle">스위치 버튼 개수에 맞는 정확한 스위처를 고르세요</div>
 
@@ -57,37 +59,37 @@
     </div>
 
 
-        <div class="row Selection">
-        <div class="col-sm-12 col-md-4 btnSelection">
+    <div class="row col-centered Selection">
+        <div class="col-xs-12 col-md-offset-1 col-md-3 btnSelection">
             <ul>
                 <li class="oneBtnImage"></li>
                 <li><p><span class="btnText">버튼 1개</span></p></li>
                 <li>
-                    <input id="btn1" type="radio" name="group1" value="0001" onclick="myFunction(1)">
+                    <input id="btn1" type="radio" name="group1" value="1" onclick="myFunction(1)">
                     <label for="btn1"></label>
                 </li>
 
             </ul>
 
         </div>
-        <div class="col-md-4 btnSelection">
+        <div class="col-xs-12 col-md-3 btnSelection">
             <ul>
                 <li class="twoBtnImage"></li>
                 <li><p><span class="btnText">버튼 2개</span></p></li>
                 <li>
-                    <input id="btn2" type="radio" name="group1" value="0002" onclick="myFunction(2)">
+                    <input id="btn2" type="radio" name="group1" value="2" onclick="myFunction(2)">
                     <label for="btn2"></label>
                 </li>
 
             </ul>
 
         </div>
-        <div class="col-md-4 btnSelection">
+        <div class="col-xs-12 col-md-3 btnSelection">
             <ul>
                 <li class="threeBtnImage"></li>
                 <li><p><span class="btnText">버튼 3개</span></p></li>
                 <li>
-                    <input id="btn3" type="radio" name="group1" value="0003" onclick="myFunction(3)">
+                    <input id="btn3" type="radio" name="group1" value="3" onclick="myFunction(3)">
                     <label for="btn3"></label>
                 </li>
 
@@ -97,19 +99,9 @@
         </div>
 
 
-</div>
-
-<a href="#" id="choosedNextBtn">
-<div class="row choiceBox">
-    <div class="col-xs-12 col-md-offset-4 chooseBox">
-        <p class="chooseText">스위처 선택</p>
-    </div>
-</div>
-</a>
 
 
 
-</div>
 
 
 <div id="snackbar_1"><p class="snackbarText">1개 버튼 스위처를 선택하셨습니다</p></div>
@@ -117,15 +109,55 @@
 <div id="snackbar_3"><p class="snackbarText">3개 버튼 스위처를 선택하셨습니다</p></div>
 
 
-    <script src="../js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../js/vendor/jquery.easing.min.js"></script>
-    <script src="../js/plugins.js"></script>
-    <script src="../js/config.js"></script>
-    <script src="../js/pay/plan.js"></script>
-    <script src="../js/pay/test_device.js?ver=1"> </script>
+
+
+<!-- Modal -->
+<div id="threeBtnModal" class="threeBtnModal modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">ㄴㄹㅁㄴㅇㄹ</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+
+                <input type="text" pattern="d*"
+                       onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" maxlength="11"
+                       placeholder="•••-••••-••••" class="phoneNumber">
+
+                <div class="sendBtn"><span class="sendBtnText">전송</span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 
 
+
+</section>
+
+    <div class="choiceBox">스위처 선택</div>
+
+
+
+
+
+</main>
+
+<script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="../js/vendor/jquery-1.12.4.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/vendor/jquery.easing.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/pay/plan.js"></script>
+<script src="../js/pay/test_device.js?ver=1"> </script>
 </body>
+
 </html>

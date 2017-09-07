@@ -134,12 +134,14 @@ $(document).ready(function () {
 });
 
 
-var moveToPlanSelector = function(type) {
-    var path = "/pay" + "/plan.html?type=" + type;
+var moveToPlanSelectPage = function(type) {
+    var path = "/pay" + "/test_plan.html?type=" + type;
 
 
     location.href = path;
 };
+
+
 
 var equalToMax = function() {
     alert("신청이 마감되었습니다. 다음에 신청해주세요");
@@ -231,23 +233,6 @@ $('#mType2CheckNext').on('click', function(e) {
 
 
 
-$('.select_device_type').on('click', function(e) {
-
-
-    if($(":input:radio[name=radio_btn_device_type]:checked").val()==="b3"){
-        $('#type1CheckModal').modal('toggle');
-
-    }
-    else{
-
-        moveToPlanSelector();
-
-    }
-
-
-
-});
-
 
 
 //여기 아래에서 부터 snackbar 구현 해야함
@@ -317,8 +302,6 @@ function myFunction(selectedBtnType) {
         }, 1500);
 
 
-
-
     }
 
 
@@ -326,12 +309,67 @@ function myFunction(selectedBtnType) {
 
 
 
+/*스위처 선택 버튼을 눌렀을때*/
 
-$('#choosedNextBtn').on('click', function(e) {
-    console.log("clicked");
-    var st = $(":input:radio[name=group1]:checked").val();
+$('.choiceBox').on('click', function(e) {
 
-    console.log(st);
+
+
+     var selectedBtn = $(":input:radio[name=group1]:checked").val();
+
+     if(selectedBtn=='3'){
+
+         $(function () {
+             $('#threeBtnModal').modal('toggle');
+         });
+     }
+     else{
+
+         moveToPlanSelectPage(selectedBtn);
+
+
+     }
+
 
 });
+
+
+$(".sendBtn").on('click', function(e) {
+
+    if ($('.phoneNumber').val().length > 0) {
+
+
+        var input = $('.phoneNumber').val();
+        console.log(input);
+
+
+        $.ajax({
+            type: "POST",
+            url: prefix+"/tempMember/insert",
+            dataType: 'application/json',
+            headers : {'Content-Type':'application/json'},
+            data : JSON.stringify({
+                phoneNumber: $('.phoneNumber').val(),
+                campaign : QueryString.utm_campaign
+            }),
+            complete : function (data) {
+                var result = JSON.parse(data.responseText).data.result;
+                if(result == 'success') {
+                    alert('등록 되었어요! 이벤트 신청 전 sms 보내드릴게요 :)');
+                    $('.dimmed').addClass('hidden');
+                } else if(result == 'duplicated') {
+                    alert('등록 되었어요! 이벤트 신청 전 sms 보내드릴게요 :)');
+                    $('.dimmed').addClass('hidden');
+                }
+            }
+        });
+
+
+
+    } else {
+        alert("폰번호를 입력해 주세요");
+    }
+});
+
+
 

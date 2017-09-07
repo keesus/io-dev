@@ -1,3 +1,19 @@
+main {
+    width: 100% !important;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+main .intro {
+    width: 100%;
+    min-height: 465px;
+    margin: 0 !important;
+    background: #fdfdfd;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -21,8 +37,6 @@ p {
 .head{
 
     margin-bottom:25px;
-
-
 
 
 
@@ -111,8 +125,9 @@ p {
 }
 
 .Selection{
-    /*width: 360px;*/
-    height: 341px;
+
+    /*width: 100%;*/
+    height: auto;
     background-color: #f8f8ff;
     padding-top: 12px;
     margin-top: 49px;
@@ -122,9 +137,9 @@ p {
 }
 
 .Selection .btnSelection{
-    width: 360px;
+    /*width: 360px;*/
     height: 68px;
-    margin:0px;
+    /*margin:0px;*/
     padding: 0;
 
 
@@ -188,6 +203,13 @@ p {
 
 }
 
+.Selection .btnSelection ul li{
+
+    display: inline;
+
+
+}
+
 .Selection .btnSelection ul li:nth-child(2) {
 
     margin-left:7px;
@@ -199,6 +221,7 @@ p {
 
 
 .Selection .btnSelection ul li:nth-child(3) {
+
 
 
 
@@ -219,8 +242,8 @@ p {
     width: 30px;
     display:inline-block;
     padding: 0 0 0 0;
-    margin-top:0px;
-    margin-left:200px;
+    margin-top:5px;
+    margin-left:155px;
     background:url('../img/test/deactive.png');
     background-repeat: no-repeat;
     background-size:100% 100%;
@@ -232,8 +255,8 @@ p {
     width: 30px;
     display:inline-block;
     padding: 0 0 0 0;
-    margin-top:0px;
-    margin-left:200px;
+    margin-top:5px;
+    margin-left:155px;
     background:url('../img/test/deactive.png');
     background-repeat: no-repeat;
     background-size:100% 100%;
@@ -245,11 +268,13 @@ p {
     width: 30px;
     display:inline-block;
     padding: 0 0 0 0;
-    margin-top:0px;
-    margin-left:200px;
+    margin-top:5px;
+    margin-left:155px;
     background:url('../img/test/deactive.png');
     background-repeat: no-repeat;
     background-size:100% 100%;
+
+
 
 }
 
@@ -264,8 +289,8 @@ p {
     height: 30px;
     width: 30px;
     display:inline-block;
-    margin-top:0px;
-    margin-left:200px;
+    margin-top:5px;
+    margin-left:155px;
     padding: 0;
 
 }
@@ -280,8 +305,8 @@ p {
     height: 30px;
     width: 30px;
     display:inline-block;
-    margin-top:0px;
-    margin-left:200px;
+    margin-top:5px;
+    margin-left:155px;
     padding: 0;
 
 }
@@ -297,8 +322,8 @@ p {
     height: 30px;
     width: 30px;
     display:inline-block;
-    margin-top:0px;
-    margin-left:200px;
+    margin-top:5px;
+    margin-left:155px;
     padding: 0;
 
 }
@@ -310,13 +335,18 @@ p {
 
 
 
-.choiceBox .chooseBox{
+.choiceBox{
 
-    width: 360px;
-    height: 43px;
     background-color: rgba(118, 123, 254, 0.85);
-
-
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    padding: 12px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
 }
 .choiceBox .chooseText{
@@ -407,6 +437,75 @@ p {
 
 
 
+#threeBtnModal .modal-content .modal-body input{
+    width: 280px;
+    height: 42px;
+    font-family: AppleSDGothicNeo;
+    font-size: 16px;
+    border-radius: 1px;
+    border: solid 1px #868fa3;
+
+}
+
+
+#threeBtnModal .modal-content .modal-body .sendBtn{
+    width: 64px;
+    height: 42px;
+    background-color: #3d4953;
+    position:relative;
+    top:-42px;
+    left:216px;
+
+
+
+}
+
+#threeBtnModal .modal-content .modal-body .sendBtn span{
+    width: 23px;
+    height: 16px;
+    font-family: AppleSDGothicNeo;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    position : absolute;
+
+    margin-top:13px;
+    margin-bottom:13px;
+    margin-left:22px;
+
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   font-size: 12px;
+    font-family: AppleSDGothicNeo;
+    text-align: center;
+    color: rgba(134, 143, 163, 0.5);
+}
+
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: pink;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: pink;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: pink;
+}
+
+
+
+.threeBtnModal .modal-content {
+
+    width:318px;
+    height: 326px;
+    margin-top:145px;
+    margin-left: 21px;
+    margin-right:21px;
+    margin-bottom:169px;
+
+
+}
 
 
 
