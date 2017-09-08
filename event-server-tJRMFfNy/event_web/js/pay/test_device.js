@@ -70,31 +70,40 @@ var prefix = hostURL.prefix;
 var DESKTOP_MIN_WIDTH = 992;
 
 
-/*모바일 검증로직*/
-/*
 
+
+/*모바일 검증로직*/
+
+/*
 
 var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
 
 
 var isMobile = false;
 
-for (var word in mobileKeyWords){
+for (var word in mobileKeyWords) {
 
-    if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+    if (navigator.userAgent.match(mobileKeyWords[word]) != null) {
         isMobile = true;
     }
 }
 
 
 
-if(isMobile){
-alert("it is mobile");
+if(!isMobile){
+
+    alert("not mobile");
+
+    var path = document.referrer+"pay/device";
+
+    alert(path);
+
+    location.href(path);
+
 }
 
-
-
 */
+
 
 
 
@@ -270,24 +279,21 @@ function myFunction(selectedBtnType) {
 
         // Add the "show" class to DIV
 
+        $('#snackbar_2').removeClass("show");
+        $('#snackbar_3').removeClass("show");
         x.className = "show";
 
 
-        setTimeout(function () {
-
-            x.className = x.className.replace("show", "");
-        }, 1500);
 
     }
     if(selectedBtnType=="2"){
 
 
         var x = document.getElementById("snackbar_2");
-        x.className ="show";
-        setTimeout(function () {
 
-            x.className = x.className.replace("show", "");
-        }, 1500);
+        $('#snackbar_1').removeClass("show");
+        $('#snackbar_3').removeClass("show");
+        x.className ="show";
 
 
     }
@@ -295,11 +301,10 @@ function myFunction(selectedBtnType) {
     if(selectedBtnType=="3"){
 
         var x = document.getElementById("snackbar_3");
+        $('#snackbar_1').removeClass("show");
+        $('#snackbar_2').removeClass("show");
         x.className ="show";
-        setTimeout(function () {
 
-            x.className = x.className.replace("show", "");
-        }, 1500);
 
 
     }
@@ -373,3 +378,15 @@ $(".sendBtn").on('click', function(e) {
 
 
 
+
+$('#phoneNumberInput').focus(function () {
+
+    $('.sendBtn').css('background-color','#3d4953');
+
+})
+
+$('#phoneNumberInput').focusout(function () {
+
+    $('.sendBtn').css('background-color','#8a97a2');
+
+})

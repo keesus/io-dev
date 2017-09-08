@@ -6,7 +6,7 @@
     <title></title>
     <meta name="description" content="">
 
-
+    <meta http-equiv="Cache-Control" content="No-Cache">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="../css/normalize.css?ver=1">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/test_device.css?ver=1">
+    <link rel="stylesheet" href="../css/test_device.css">
 
 
 
@@ -33,8 +33,7 @@
 
 <main class="container-fluid">
     <section data-vc-full-width="true" data-vc-full-width-init="true" class="row intro">
-    <div class="row head">
-        <div class="col-sm-12 col-xs-12 col-md-12">
+        <div class="col-sm-12 col-xs-12 col-md-12 header">
             <div class="normalHeader">
                 <ul class="menu">
                     <li>스위처선택</li>
@@ -45,61 +44,62 @@
             </div>
 
         </div>
-    </div>
 
 
 
-    <div class="row title">
-        <div class="col-xs-12 col-md-offset-5 col-md-12">
+        <div class="col-xs-12 col-centered col-md-12 title" >
             <div class ="mainTitle">우리집<br>스위치 버튼이 몇개지? </div>
             <div class ="contentsTitle">스위치 버튼 개수에 맞는 정확한 스위처를 고르세요</div>
 
         </div>
 
-    </div>
 
+        <div class="btnWrapper">
 
-    <div class="row col-centered Selection">
-        <div class="col-xs-12 col-md-offset-1 col-md-3 btnSelection">
-            <ul>
-                <li class="oneBtnImage"></li>
-                <li><p><span class="btnText">버튼 1개</span></p></li>
-                <li>
-                    <input id="btn1" type="radio" name="group1" value="1" onclick="myFunction(1)">
-                    <label for="btn1"></label>
-                </li>
+            <div class="col-xs-12 col-md-offset-1 col-md-3 btnSelection">
+                <ul>
+                    <li class="oneBtnImage"></li>
+                    <li><p><span class="btnText">버튼 1개</span></p></li>
+                    <li>
+                        <input id="btn1" type="radio" name="group1" value="1" onclick="myFunction(1)">
+                        <label for="btn1"></label>
+                    </li>
 
-            </ul>
+                </ul>
+
+            </div>
+            <div class="col-xs-12 col-md-3 btnSelection">
+                <ul>
+                    <li class="twoBtnImage"></li>
+                    <li><p><span class="btnText">버튼 2개</span></p></li>
+                    <li>
+                        <input id="btn2" type="radio" name="group1" value="2" onclick="myFunction(2)">
+                        <label for="btn2"></label>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="col-xs-12 col-md-3 btnSelection">
+                <ul>
+                    <li class="threeBtnImage"></li>
+                    <li><p><span class="btnText">버튼 3개</span></p></li>
+                    <li>
+                        <input id="btn3" type="radio" name="group1" value="3" onclick="myFunction(3)">
+                        <label for="btn3"></label>
+                    </li>
+
+                </ul>
+            </div>
+
 
         </div>
-        <div class="col-xs-12 col-md-3 btnSelection">
-            <ul>
-                <li class="twoBtnImage"></li>
-                <li><p><span class="btnText">버튼 2개</span></p></li>
-                <li>
-                    <input id="btn2" type="radio" name="group1" value="2" onclick="myFunction(2)">
-                    <label for="btn2"></label>
-                </li>
-
-            </ul>
-
-        </div>
-        <div class="col-xs-12 col-md-3 btnSelection">
-            <ul>
-                <li class="threeBtnImage"></li>
-                <li><p><span class="btnText">버튼 3개</span></p></li>
-                <li>
-                    <input id="btn3" type="radio" name="group1" value="3" onclick="myFunction(3)">
-                    <label for="btn3"></label>
-                </li>
-
-            </ul>
-        </div>
-
-        </div>
 
 
 
+
+
+    </section>
 
 
 
@@ -112,18 +112,23 @@
 
 
 <!-- Modal -->
-<div id="threeBtnModal" class="threeBtnModal modal fade" role="dialog">
-    <div class="modal-dialog">
-
+<div id="threeBtnModal" class="threeBtnModal modal modal-center fade" role="dialog">
+    <div class="modal-dialog modal-center threeBtnModalDialog">
         <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">ㄴㄹㅁㄴㅇㄹ</button>
-                <h4 class="modal-title">Modal Header</h4>
+        <div class="modal-content threeBtnModalContent">
+            <div class="modal-header modalHeaderImg">
+
             </div>
             <div class="modal-body">
+                <div class ="modalTitle">집 스위치 버튼이 세개시군요.</div>
+                <div class ="modalTitleDescription">
+                    스위처팀이 지금 열심히 개발중입니다.
+                    조금만 기다려주세요.빠른 출시 소식을
+                    원하시면 전화번호를 남겨주세요.
 
-                <input type="text" pattern="d*"
+                </div>
+
+                <input id="phoneNumberInput" type="text" pattern="d*"
                        onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" maxlength="11"
                        placeholder="•••-••••-••••" class="phoneNumber">
 
@@ -140,7 +145,7 @@
 
 
 
-</section>
+
 
     <div class="choiceBox">스위처 선택</div>
 
@@ -157,7 +162,8 @@
 <script src="../js/plugins.js"></script>
 <script src="../js/config.js"></script>
 <script src="../js/pay/plan.js"></script>
-<script src="../js/pay/test_device.js?ver=1"> </script>
+<script src="../js/pay/test_device.js"> </script>
+
 </body>
 
 </html>

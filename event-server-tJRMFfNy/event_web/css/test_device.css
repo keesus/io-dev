@@ -28,6 +28,8 @@ li {
 }
 
 
+
+
 p {
     margin:0px;
 
@@ -107,7 +109,12 @@ p {
     line-height: 1.43;
     text-align: left;
     color: #3d4953;
-    margin-bottom: 11px;
+    margin:0 auto;
+    margin-bottom:11px;
+
+
+
+
 
 }
 
@@ -120,32 +127,44 @@ p {
     font-weight: 500;
     text-align: left;
     color: #868fa3;
+    margin:0 auto;
+
 
 
 }
 
-.Selection{
+.title{
 
-    /*width: 100%;*/
-    height: auto;
+
+    margin-bottom:49px;
+
+}
+
+
+
+.btnWrapper{
+
     background-color: #f8f8ff;
-    padding-top: 12px;
-    margin-top: 49px;
+    margin-top:230px;
+    padding: 10px;
+
+
 
 
 
 }
 
-.Selection .btnSelection{
-    /*width: 360px;*/
-    height: 68px;
+.btnWrapper .btnSelection{
+    /*width: 360px;*px/
+    /*height: 68px;*/
     /*margin:0px;*/
-    padding: 0;
+    padding:0;
+
 
 
 }
 
-.Selection .btnSelection .oneBtnImage{
+.btnWrapper .btnSelection .oneBtnImage{
     width: 48px;
     height: 46px;
     object-fit: contain;
@@ -157,7 +176,7 @@ p {
 
 }
 
-.Selection .btnSelection .twoBtnImage{
+.btnWrapper .btnSelection .twoBtnImage{
     width: 48px;
     height: 46px;
     object-fit: contain;
@@ -168,7 +187,7 @@ p {
 
 
 }
-.Selection .btnSelection .threeBtnImage{
+.btnWrapper .btnSelection .threeBtnImage{
     width: 48px;
     height: 46px;
     object-fit: contain;
@@ -179,7 +198,7 @@ p {
 
 
 }
-.Selection .btnSelection .btnText{
+.btnWrapper .btnSelection .btnText{
 
     width: 75px;
     height: 19px;
@@ -194,23 +213,31 @@ p {
 
 }
 
-.Selection .btnSelection ul{
+.btnWrapper .btnSelection ul{
 
     margin-left:16px;
     margin-top:11px;
     padding: 0;
+    width:100%;
+
     float:left;
 
 }
 
-.Selection .btnSelection ul li{
+.btnWrapper .btnSelection ul li{
 
     display: inline;
 
 
 }
 
-.Selection .btnSelection ul li:nth-child(2) {
+.btnWrapper .btnSelection ul li .checkImg{
+
+    float:right;
+
+}
+
+.btnWrapper .btnSelection ul li:nth-child(2) {
 
     margin-left:7px;
     margin-top:12px;
@@ -220,16 +247,16 @@ p {
 }
 
 
-.Selection .btnSelection ul li:nth-child(3) {
+.btnWrapper .btnSelection ul li:nth-child(3) {
 
+    float :right;
 
-
-
+    margin-right:30px
 }
 
 
 
-.Selection .btnSelection ul li:nth-child(3) #btn1, #btn2,#btn3 {
+.btnWrapper .btnSelection ul li:nth-child(3) #btn1, #btn2,#btn3 {
     display: none;
 
 
@@ -237,39 +264,36 @@ p {
 }
 
 
-.Selection .btnSelection ul li:nth-child(3) #btn1 + label {
+.btnWrapper .btnSelection ul li:nth-child(3) #btn1 + label {
     height: 30px;
     width: 30px;
     display:inline-block;
     padding: 0 0 0 0;
     margin-top:5px;
-    margin-left:155px;
     background:url('../img/test/deactive.png');
     background-repeat: no-repeat;
     background-size:100% 100%;
 
 }
 
-.Selection .btnSelection ul li:nth-child(3) #btn2 + label {
+.btnWrapper .btnSelection ul li:nth-child(3) #btn2 + label {
     height: 30px;
     width: 30px;
     display:inline-block;
     padding: 0 0 0 0;
     margin-top:5px;
-    margin-left:155px;
     background:url('../img/test/deactive.png');
     background-repeat: no-repeat;
     background-size:100% 100%;
 
 }
 
-.Selection .btnSelection ul li:nth-child(3) #btn3 + label {
+.btnWrapper .btnSelection ul li:nth-child(3) #btn3 + label {
     height: 30px;
     width: 30px;
     display:inline-block;
     padding: 0 0 0 0;
     margin-top:5px;
-    margin-left:155px;
     background:url('../img/test/deactive.png');
     background-repeat: no-repeat;
     background-size:100% 100%;
@@ -279,7 +303,7 @@ p {
 }
 
 
-.Selection .btnSelection ul li:nth-child(3) #btn1:checked + label
+.btnWrapper .btnSelection ul li:nth-child(3) #btn1:checked + label
 {
     display:inline-block;
 
@@ -290,12 +314,11 @@ p {
     width: 30px;
     display:inline-block;
     margin-top:5px;
-    margin-left:155px;
     padding: 0;
 
 }
 
-.Selection .btnSelection ul li:nth-child(3) #btn2:checked + label
+.btnWrapper .btnSelection ul li:nth-child(3) #btn2:checked + label
 {
     display:inline-block;
 
@@ -306,13 +329,12 @@ p {
     width: 30px;
     display:inline-block;
     margin-top:5px;
-    margin-left:155px;
     padding: 0;
 
 }
 
 
-.Selection .btnSelection ul li:nth-child(3) #btn3:checked + label
+.btnWrapper .btnSelection ul li:nth-child(3) #btn3:checked + label
 {
     display:inline-block;
 
@@ -323,7 +345,6 @@ p {
     width: 30px;
     display:inline-block;
     margin-top:5px;
-    margin-left:155px;
     padding: 0;
 
 }
@@ -375,7 +396,7 @@ p {
     text-align: left;
     margin-top:15px;
     margin-bottom: 16px;
-    margin-left:42px;
+    margin-left:80px;
     color: #767bfe;
 
 }
@@ -390,14 +411,18 @@ p {
 
     border-radius: 2px;
     box-shadow: 0 3px 8px 0 rgba(0,0,0,0.14);
-
+    position: fixed; /* Sit on top of the screen */
+    border: solid 1px #767bfe;
+    left:50%;
+    margin-left:-162px;
 
     background-color: #f8f8ff; /* Black background color */
     color: #fff; /* White text color */
     text-align: center; /* Centered text */
 
+
     padding: 0px; /* Padding */
-    position: fixed; /* Sit on top of the screen */
+
     z-index: 1; /* Add a z-index if needed */
     bottom: 50px; /* 30px from the bottom */
 
@@ -410,8 +435,7 @@ p {
 
     /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
     However, delay the fade out process for 2.5 seconds */
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+
 }
 
 /* Animations to fade the snackbar in and out */
@@ -451,6 +475,18 @@ p {
 #threeBtnModal .modal-content .modal-body .sendBtn{
     width: 64px;
     height: 42px;
+    background-color: #8a97a2;
+    position:relative;
+    top:-42px;
+    left:216px;
+
+
+
+}
+
+#threeBtnModal .modal-content .modal-body .activeBtn{
+    width: 64px;
+    height: 42px;
     background-color: #3d4953;
     position:relative;
     top:-42px;
@@ -476,9 +512,10 @@ p {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-   font-size: 12px;
+    font-size: 12px;
     font-family: AppleSDGothicNeo;
-    text-align: center;
+    text-align: left;
+
     color: rgba(134, 143, 163, 0.5);
 }
 
@@ -494,20 +531,78 @@ p {
 }
 
 
+.threeBtnModal .threeBtnModalDialog{
 
-.threeBtnModal .modal-content {
-
-    width:318px;
+    width: 318px;
     height: 326px;
-    margin-top:145px;
-    margin-left: 21px;
-    margin-right:21px;
-    margin-bottom:169px;
+
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -159px;
+    margin-top: -163px;
+    border-radius: 3px;
+
+
+
+    padding: 0;
 
 
 }
 
+.threeBtnModal .threeBtnModalContent {
 
+    height: auto;
+    min-height: 100%;
+    border-radius: 3px;
+
+
+
+}
+
+.threeBtnModal .threeBtnModalContent .modalHeaderImg{
+
+
+    width: 125px;
+    height: 93px;
+    margin-left: 96px;
+    margin-top:21px;
+    background-image:url('../img/test/dev-btn-3.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    padding:0;
+    border:0;
+
+
+}
+
+.threeBtnModal .threeBtnModalContent .modal-body .modalTitle{
+
+
+    width: 258px;
+    height: 21px;
+    font-family: AppleSDGothicNeo;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    text-align: center;
+    color: #767bfe;
+}
+
+
+.threeBtnModal .threeBtnModalContent .modal-body .modalTitleDescription{
+
+    width: 181px;
+    height: 54px;
+    font-family: AppleSDGothicNeo;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #8a97a2;
+
+}
 
 
 
